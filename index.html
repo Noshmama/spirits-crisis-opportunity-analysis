@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Spirits Crisis &amp; Opportunity Analysis</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <style>
         :root {
             --bg: #f8f9fb;
@@ -906,13 +905,6 @@
     <h2 class="section-title">II. Trade &amp; Tariff Environment</h2>
     <p class="section-subtitle">The Supreme Court struck down IEEPA tariffs in February 2026&mdash;but the administration replaced them within 24 hours, and retaliatory measures from trading partners remain in force.</p>
 
-    <div class="chart-container">
-        <h3>U.S. Spirits Export Collapse by Market (Q2 2025 vs. Q2 2024)</h3>
-        <p class="chart-desc">Year-over-year change in export value by destination. Canada, UK, Japan, and EU collectively represent ~70% of all U.S. spirits exports. Data: DISCUS Mid-Year Export Report 2025.</p>
-        <div class="chart-wrap">
-            <canvas id="exportChart"></canvas>
-        </div>
-    </div>
 
     <div class="category-section">
         <h3>Retaliatory Tariff Timeline</h3>
@@ -1859,53 +1851,6 @@
 <footer>
     Analysis by Zillah Bahar | Data sourced from DISCUS, SWA, BNIC, IWSR, NielsenIQ, Impact Databank, NABCA, ACSA, WSWA SipSource, company filings, trade databases, and court records | March 2026
 </footer>
-
-<script>
-// Chart 1: Export Collapse
-const expCtx = document.getElementById('exportChart').getContext('2d');
-new Chart(expCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Canada', 'UK', 'Japan', 'Cordials/Liqueurs', 'Vodka', 'American Whiskey', 'Brandy', 'EU', 'Total Spirits', 'Rum'],
-        datasets: [{
-            label: 'Q2 2025 vs Q2 2024',
-            data: [-85, -25, -23, -15, -14, -13, -12, -12, -9, -6],
-            backgroundColor: function(ctx) {
-                const v = ctx.raw;
-                return v <= -50 ? '#991b1b' : v <= -20 ? '#dc2626' : v <= -10 ? '#ef4444' : '#f87171';
-            },
-            borderRadius: 6,
-            borderSkipped: false,
-        }]
-    },
-    options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: { display: false },
-            tooltip: {
-                callbacks: {
-                    label: ctx => ctx.raw + '% YoY'
-                }
-            }
-        },
-        scales: {
-            x: {
-                grid: { color: '#e2e5ea' },
-                ticks: { callback: v => v + '%', font: { size: 12 } },
-                max: 0,
-                min: -90
-            },
-            y: {
-                grid: { display: false },
-                ticks: { font: { size: 12, weight: 600 } }
-            }
-        }
-    }
-});
-
-</script>
 
 </body>
 </html>
