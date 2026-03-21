@@ -18,7 +18,6 @@
             --red: #dc2626;
             --amber: #d97706;
             --teal: #0d9488;
-            --navy: #1e3a5f;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -95,7 +94,6 @@
             margin-bottom: 2rem;
         }
 
-        /* Formula / Thesis Box */
         .formula-box {
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%);
             border: none;
@@ -175,9 +173,7 @@
             transform: translateY(-1px);
         }
 
-        .formula-factor .factor-icon {
-            font-size: 1.1rem;
-        }
+        .formula-factor .factor-icon { font-size: 1.1rem; }
 
         .formula-plus {
             color: rgba(199, 194, 255, 0.5);
@@ -187,7 +183,6 @@
             align-items: center;
         }
 
-        /* Executive Summary */
         .executive-summary {
             background: var(--card);
             border: 1px solid var(--border);
@@ -206,7 +201,6 @@
             color: var(--accent);
         }
 
-        /* Chart containers */
         .chart-container {
             background: var(--card);
             border: 1px solid var(--border);
@@ -232,7 +226,6 @@
             max-height: 500px;
         }
 
-        /* Metric cards row */
         .three-words {
             display: flex;
             gap: 1.5rem;
@@ -245,9 +238,9 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 1.5rem 2.5rem;
+            padding: 1.5rem 2rem;
             text-align: center;
-            min-width: 200px;
+            min-width: 180px;
             flex: 1;
         }
 
@@ -259,14 +252,12 @@
         .three-words .word h3.down { color: var(--red); }
         .three-words .word h3.up { color: var(--green); }
         .three-words .word h3.caution { color: var(--amber); }
-        .three-words .word h3.neutral { color: var(--accent); }
 
         .three-words .word p {
             font-size: 0.85rem;
             color: var(--text-muted);
         }
 
-        /* Category sections */
         .category-section {
             background: var(--card);
             border: 1px solid var(--border);
@@ -293,9 +284,7 @@
             margin-bottom: 1rem;
         }
 
-        .category-section .cat-body p {
-            margin-bottom: 0.75rem;
-        }
+        .category-section .cat-body p { margin-bottom: 0.75rem; }
 
         .vs-row {
             display: grid;
@@ -325,19 +314,12 @@
             border: 1px solid rgba(79, 70, 229, 0.15);
         }
 
-        .vs-box h4 {
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
+        .vs-box h4 { font-size: 0.95rem; margin-bottom: 0.5rem; }
         .vs-box.winner h4 { color: var(--green); }
         .vs-box.loser h4 { color: var(--red); }
         .vs-box.neutral-box h4 { color: var(--accent); }
 
-        .vs-box ul {
-            list-style: none;
-            padding: 0;
-        }
+        .vs-box ul { list-style: none; padding: 0; }
 
         .vs-box ul li {
             padding: 0.2rem 0;
@@ -358,7 +340,6 @@
         .vs-box.loser ul li::before { background: var(--red); }
         .vs-box.neutral-box ul li::before { background: var(--accent); }
 
-        /* Pillars / Signal cards */
         .pillars {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -398,17 +379,7 @@
         .pillar-card .pillar-num.red { background: var(--red); }
         .pillar-card .pillar-num.amber { background: var(--amber); }
 
-        .pillar-card .pillar-name {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .pillar-card .pillar-weight {
-            font-size: 0.8rem;
-            color: var(--accent-light);
-            margin-left: auto;
-            font-weight: 600;
-        }
+        .pillar-card .pillar-name { font-weight: 600; font-size: 1rem; }
 
         .pillar-card .pillar-example {
             font-size: 0.85rem;
@@ -416,15 +387,9 @@
             line-height: 1.6;
         }
 
-        .pillar-card .pillar-example strong {
-            color: var(--green);
-        }
+        .pillar-card .pillar-example strong { color: var(--green); }
+        .pillar-card .pillar-example .loser { color: var(--red); }
 
-        .pillar-card .pillar-example .loser {
-            color: var(--red);
-        }
-
-        /* Tables */
         .data-table-wrap {
             overflow-x: auto;
             margin: 1.5rem 0;
@@ -471,7 +436,6 @@
         .badge-amber { background: rgba(217,119,6,0.1); color: var(--amber); }
         .badge-teal { background: rgba(13,148,136,0.1); color: var(--teal); }
 
-        /* Opportunity matrix */
         .opportunity-matrix {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -486,11 +450,7 @@
             padding: 1.5rem;
         }
 
-        .opp-card h4 {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            color: var(--text);
-        }
+        .opp-card h4 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
 
         .opp-card .opp-rating {
             display: inline-block;
@@ -505,13 +465,8 @@
         .opp-card .opp-rating.medium { background: rgba(217,119,6,0.1); color: var(--amber); }
         .opp-card .opp-rating.low { background: rgba(220,38,38,0.1); color: var(--red); }
 
-        .opp-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
+        .opp-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
-        /* Timeline */
         .timeline {
             position: relative;
             padding-left: 2rem;
@@ -552,29 +507,14 @@
         .timeline-item.caution::before { border-color: var(--amber); background: rgba(217,119,6,0.15); }
         .timeline-item.pivot::before { border-color: var(--accent); background: rgba(79,70,229,0.15); }
 
-        .timeline-year {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--text-muted);
-            margin-bottom: 0.15rem;
-        }
-
-        .timeline-event {
-            font-size: 0.9rem;
-        }
-
+        .timeline-year { font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem; }
+        .timeline-event { font-size: 0.9rem; }
         .timeline-item.crisis .timeline-event { color: var(--red); }
         .timeline-item.opportunity .timeline-event { color: var(--green); }
         .timeline-item.caution .timeline-event { color: var(--amber); }
         .timeline-item.pivot .timeline-event { color: var(--accent-light); }
+        .timeline-detail { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem; }
 
-        .timeline-detail {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            margin-top: 0.2rem;
-        }
-
-        /* Prediction / Signal model */
         .prediction-model {
             background: var(--card);
             border: 1px solid var(--border);
@@ -584,10 +524,7 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
 
-        .prediction-model h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.35rem;
-        }
+        .prediction-model h3 { font-size: 1.3rem; margin-bottom: 0.35rem; }
 
         .prediction-model .pm-subtitle {
             font-size: 0.9rem;
@@ -614,35 +551,15 @@
         }
 
         .pm-bar-wrap { flex: 1; }
+        .pm-factor-name { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .pm-bar { height: 8px; border-radius: 4px; background: #e2e5ea; }
 
-        .pm-factor-name {
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .pm-bar {
-            height: 8px;
-            border-radius: 4px;
-            background: #e2e5ea;
-        }
-
-        .pm-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            background: var(--accent);
-        }
-
+        .pm-bar-fill { height: 100%; border-radius: 4px; background: var(--accent); }
         .pm-bar-fill.green { background: var(--green); }
         .pm-bar-fill.red { background: var(--red); }
         .pm-bar-fill.amber { background: var(--amber); }
 
-        .pm-example {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            min-width: 200px;
-            max-width: 280px;
-        }
+        .pm-example { font-size: 0.8rem; color: var(--text-muted); min-width: 200px; max-width: 280px; }
 
         .pm-interpretation {
             margin-top: 1.5rem;
@@ -656,7 +573,6 @@
 
         .pm-interpretation strong { color: var(--text); }
 
-        /* Anti-pattern / Risk */
         .anti-pattern {
             background: rgba(220, 38, 38, 0.04);
             border: 1px solid rgba(220, 38, 38, 0.15);
@@ -665,15 +581,8 @@
             margin: 2rem 0;
         }
 
-        .anti-pattern h3 {
-            color: var(--red);
-            margin-bottom: 1rem;
-        }
-
-        .anti-pattern ul {
-            list-style: none;
-            padding: 0;
-        }
+        .anti-pattern h3 { color: var(--red); margin-bottom: 1rem; }
+        .anti-pattern ul { list-style: none; padding: 0; }
 
         .anti-pattern ul li {
             padding: 0.4rem 0;
@@ -688,7 +597,6 @@
             font-weight: bold;
         }
 
-        /* Callout box */
         .callout {
             background: rgba(79, 70, 229, 0.04);
             border: 1px solid rgba(79, 70, 229, 0.15);
@@ -700,10 +608,7 @@
             line-height: 1.7;
         }
 
-        .callout h4 {
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
+        .callout h4 { color: var(--accent); margin-bottom: 0.5rem; }
 
         .callout.green-callout {
             background: rgba(22, 163, 74, 0.04);
@@ -711,6 +616,105 @@
         }
 
         .callout.green-callout h4 { color: var(--green); }
+
+        /* Client Module */
+        .client-module {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede9fe 100%);
+            border: 2px solid #c4b5fd;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .client-module .cm-label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(79, 70, 229, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .client-module h3 {
+            font-size: 1.4rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .client-module .cm-intro {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .cm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cm-item {
+            background: rgba(255,255,255,0.7);
+            border: 1px solid #ddd6fe;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.82rem;
+            color: var(--text);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .cm-item::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 0.45rem;
+            flex-shrink: 0;
+        }
+
+        .cm-contact {
+            background: var(--card);
+            border: 1px solid #c4b5fd;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .cm-contact p {
+            font-size: 0.9rem;
+            color: var(--text);
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .cm-contact a {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.6rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .cm-contact a:hover { background: var(--accent-light); }
 
         /* Sources */
         .sources {
@@ -720,14 +724,18 @@
         }
 
         .sources h3 {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-muted);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
         }
 
-        .source-category {
+        .sources .sources-intro {
+            font-size: 0.85rem;
+            color: var(--text-muted);
             margin-bottom: 1.5rem;
         }
+
+        .source-category { margin-bottom: 1.5rem; }
 
         .source-category h4 {
             font-size: 0.85rem;
@@ -738,25 +746,39 @@
             letter-spacing: 0.05em;
         }
 
-        .sources-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        .source-entry {
+            display: flex;
             gap: 0.5rem;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            font-size: 0.8rem;
+            align-items: baseline;
         }
 
-        .sources-grid a {
+        .source-entry:last-child { border-bottom: none; }
+
+        .source-name {
+            font-weight: 600;
+            color: var(--text);
+            min-width: 140px;
+            flex-shrink: 0;
+        }
+
+        .source-desc { color: var(--text-muted); flex: 1; }
+
+        .source-link a {
             color: var(--accent-light);
-            font-size: 0.8rem;
             text-decoration: none;
-            padding: 0.3rem 0;
+            font-size: 0.75rem;
+            white-space: nowrap;
         }
 
-        .sources-grid a:hover { text-decoration: underline; }
+        .source-link a:hover { text-decoration: underline; }
 
-        .sources-grid span {
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            padding: 0.3rem 0;
+        .source-sub {
+            font-size: 0.7rem;
+            color: var(--amber);
+            font-weight: 600;
         }
 
         footer {
@@ -777,6 +799,7 @@
             .opportunity-matrix { grid-template-columns: 1fr; }
             .pm-factor-row { flex-direction: column; align-items: flex-start; }
             .pm-example { min-width: auto; }
+            .cm-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -796,7 +819,7 @@
         <h3>The Great Spirits Restructuring</h3>
         <p class="formula-intro">The global spirits industry is experiencing its most significant structural realignment since Prohibition. Six simultaneous forces are creating a once-in-a-generation opportunity landscape for investors who can read the map:</p>
         <div class="formula-factors">
-            <span class="formula-factor"><span class="factor-icon">&#x25BC;</span> U.S. Domestic Contraction</span>
+            <span class="formula-factor"><span class="factor-icon">&#x25BC;</span> U.S. De-Premiumization</span>
             <span class="formula-plus">+</span>
             <span class="formula-factor"><span class="factor-icon">&#x2716;</span> Retaliatory Tariff Walls</span>
             <span class="formula-plus">+</span>
@@ -813,141 +836,132 @@
     <!-- Executive Summary -->
     <div class="executive-summary">
         <h3>Executive Summary</h3>
-        <p>The U.S. spirits industry&mdash;the world&rsquo;s largest spirits market by revenue&mdash;is contracting simultaneously across volume, export value, and producer count. Total U.S. spirits volumes declined an estimated 1.0% in 2024 after a 1.0% decline in 2023, marking the first consecutive annual volume decline in over two decades. The Distilled Spirits Council of the United States (DISCUS) reported supplier revenues of $37.4 billion in 2024, down from their 2022 peak. American whiskey exports to the EU, once growing at 30%+ annually, collapsed by roughly 20% after the reimposition of 50% EU retaliatory tariffs in 2025. Simultaneously, Scotland is experiencing its worst distillery contraction in decades: Diageo mothballed or closed several facilities including Brora and parts of its Leven complex, while independent operators from Arbikie to GlenWyvis have shuttered or scaled back. In the U.S., the American Craft Spirits Association documented a sharp acceleration in craft distillery closures and consolidation, with an estimated 10&ndash;15% of craft distillers exiting between 2023&ndash;2025.</p>
-        <p style="margin-top:1rem">But contraction for some is opportunity for others. Irish whiskey continues to gain global market share, with Jameson alone growing 6% in 2024. Japanese whisky commands luxury pricing premiums that insulate it from volume volatility. Caribbean rum producers are positioned to fill shelf space vacated by contracting American and Scottish brands. And the distressed-asset pipeline&mdash;from mothballed Scottish distilleries to struggling American craft operations&mdash;presents acquisition opportunities at 30&ndash;50% discounts to 2021&ndash;2022 peak valuations. This analysis maps the crisis landscape and identifies where forward-looking capital should deploy.</p>
+        <p>The U.S. spirits industry&mdash;the world&rsquo;s largest by revenue&mdash;reported supplier revenues of $37.2 billion in 2024, down 1.1% from $37.7 billion in 2023 and well off the ~$39.1 billion peak of 2022 (DISCUS). Volumes actually rose 1.1% to 312.2 million nine-liter cases, meaning the market is undergoing de-premiumization: consumers drinking roughly the same amount but trading down in price tier. The high-end premium and super-premium segments declined 5.6% in 2024. This revenue-volume divergence is the defining signal of the current cycle.</p>
+        <p style="margin-top:1rem">Simultaneously, the producer base is shrinking at historic speed. Active U.S. craft distillers fell from 3,069 to 2,282 in 12 months through August 2025&mdash;a 25.6% decline. In Scotland, Diageo mothballed Teaninich Distillery and suspended production at Roseisle Maltings; Speyside Distillery permanently ceased operations; Isle of Harris and Lindores Abbey cut staff. Major U.S. producers are in retrenchment: Jim Beam suspended all distilling at Clermont, Kentucky for the entirety of 2026; Brown-Forman cut 12% of its global workforce and closed its Louisville cooperage; Diageo&rsquo;s North American sales fell 2.5% and the CEO departed. American whiskey exports, once reaching record $2.4 billion in 2024, collapsed in Q2 2025&mdash;down 85% to Canada, 25% to the UK, 23% to Japan, and 12% to the EU following retaliatory tariff escalation.</p>
+        <p style="margin-top:1rem">But contraction for some is opportunity for others. Irish whiskey exports crossed &euro;1 billion in 2024, up 13%. Don Julio overtook Tito&rsquo;s as the #1 U.S. spirits brand by retail value at $2.6 billion. RTD spirits-based cocktails grew 16.4% to $3.8 billion. And the distressed-asset pipeline&mdash;from mothballed Scottish distilleries to Stoli Group&rsquo;s Chapter 7 liquidation ($100&ndash;500M in assets) to MGP Ingredients&rsquo; 68% gross profit collapse&mdash;presents acquisition opportunities at 30&ndash;60% discounts to peak valuations. This analysis maps the crisis and identifies where forward-looking capital should deploy.</p>
     </div>
 
     <!-- Key Metrics -->
     <div class="three-words">
         <div class="word">
-            <h3 class="down">&minus;1.0%</h3>
-            <p>U.S. spirits volume change 2024, second consecutive annual decline</p>
+            <h3 class="down">$37.2B</h3>
+            <p>U.S. spirits supplier revenue 2024, down from ~$39.1B peak in 2022</p>
         </div>
         <div class="word">
-            <h3 class="down">&minus;20%</h3>
-            <p>American whiskey export value to EU post-tariff reimposition (2025 est.)</p>
+            <h3 class="down">&minus;25.6%</h3>
+            <p>Active U.S. craft distillers lost in 12 months (3,069 to 2,282)</p>
         </div>
         <div class="word">
-            <h3 class="down">50+</h3>
-            <p>Distillery closures or mothballings, U.S. and Scotland combined (2024&ndash;2025)</p>
+            <h3 class="down">&minus;85%</h3>
+            <p>U.S. spirits exports to Canada, Q2 2025 vs. prior year</p>
         </div>
         <div class="word">
-            <h3 class="up">+6%</h3>
-            <p>Irish whiskey volume growth (2024), gaining share globally</p>
+            <h3 class="up">&euro;1B+</h3>
+            <p>Irish whiskey exports 2024, up 13% YoY</p>
+        </div>
+        <div class="word">
+            <h3 class="up">+16.4%</h3>
+            <p>RTD spirits-based revenue growth to $3.8B in 2025</p>
         </div>
     </div>
 
     <!-- ============================================================ -->
     <!-- SECTION 1: U.S. DOMESTIC MARKET -->
     <!-- ============================================================ -->
-    <h2 class="section-title">I. U.S. Domestic Market: The Contraction</h2>
-    <p class="section-subtitle">The world's largest spirits market by revenue is shrinking for the first time in a generation.</p>
+    <h2 class="section-title">I. U.S. Domestic Market: The De-Premiumization</h2>
+    <p class="section-subtitle">Volume up. Revenue down. The market is trading down, not drying up.</p>
 
     <div class="chart-container">
-        <h3>U.S. Spirits Category Performance (2024 vs. 2023)</h3>
-        <p class="chart-desc">Year-over-year volume change by category. The breadth of decline is the story: most major categories are flat or contracting. Data synthesized from DISCUS, IWSR, and NielsenIQ.</p>
+        <h3>U.S. Spirits Revenue by Category (2024)</h3>
+        <p class="chart-desc">Category revenue and year-over-year trajectory. Tequila/mezcal now the #2 category by revenue, overtaking American whiskey. Data: DISCUS 2025 Economic Briefing.</p>
         <div class="chart-wrap">
-            <canvas id="categoryChart"></canvas>
+            <canvas id="revenueChart"></canvas>
         </div>
     </div>
 
     <div class="category-section">
-        <h3>Consumption Trends: Category by Category</h3>
-        <p class="cat-sub">2023&ndash;2025 trajectory for each major spirits category in the U.S. domestic market.</p>
+        <h3>Category-by-Category Performance (2024)</h3>
+        <p class="cat-sub">DISCUS, IWSR, NielsenIQ, and control-state data through early 2026.</p>
         <div class="data-table-wrap">
             <table>
                 <thead>
                     <tr>
                         <th>Category</th>
-                        <th>2024 Volume Trend</th>
+                        <th>2024 Revenue</th>
                         <th>Revenue Trend</th>
-                        <th>Key Driver</th>
+                        <th>Key Signal</th>
                         <th>Outlook</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><strong>Vodka</strong></td>
-                        <td><span class="badge badge-red">&minus;2.5%</span></td>
-                        <td><span class="badge badge-red">&minus;1.8%</span></td>
-                        <td>Value segment collapse; Tito's flat, rest declining</td>
-                        <td><span class="badge badge-amber">Cautious</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>American Whiskey</strong></td>
-                        <td><span class="badge badge-red">&minus;1.5%</span></td>
+                        <td>$7.2B (#1)</td>
                         <td><span class="badge badge-amber">Flat</span></td>
-                        <td>Premiumization holding revenue; volume softening at entry tier</td>
-                        <td><span class="badge badge-amber">Cautious</span></td>
+                        <td>Tito&rsquo;s declined 1.5% for first time ever; Smirnoff &minus;6%</td>
+                        <td><span class="badge badge-amber">Stagnant</span></td>
                     </tr>
                     <tr>
-                        <td><strong>Tequila</strong></td>
-                        <td><span class="badge badge-amber">+1.2%</span></td>
-                        <td><span class="badge badge-green">+3.5%</span></td>
-                        <td>Slowing sharply from +10% era; premiumization propping revenue</td>
+                        <td><strong>Tequila &amp; Mezcal</strong></td>
+                        <td>$6.7B (#2)</td>
+                        <td><span class="badge badge-green">+2.9%</span></td>
+                        <td>Only traditional category with positive revenue; Don Julio +28.2% to 4.4M cases</td>
                         <td><span class="badge badge-amber">Decelerating</span></td>
                     </tr>
                     <tr>
-                        <td><strong>Mezcal</strong></td>
-                        <td><span class="badge badge-green">+8%</span></td>
-                        <td><span class="badge badge-green">+12%</span></td>
-                        <td>Still growing off small base; artisanal positioning insulates</td>
-                        <td><span class="badge badge-green">Positive</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Irish Whiskey</strong></td>
-                        <td><span class="badge badge-green">+5%</span></td>
-                        <td><span class="badge badge-green">+7%</span></td>
-                        <td>Jameson momentum; accessibility advantage over bourbon</td>
-                        <td><span class="badge badge-green">Strong</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Japanese Whisky</strong></td>
-                        <td><span class="badge badge-green">+10%</span></td>
-                        <td><span class="badge badge-green">+15%</span></td>
-                        <td>Supply-constrained; ultra-premium demand exceeds allocation</td>
-                        <td><span class="badge badge-green">Strong</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Scotch</strong></td>
-                        <td><span class="badge badge-red">&minus;2%</span></td>
-                        <td><span class="badge badge-amber">Flat</span></td>
-                        <td>Blended Scotch losing share; single malt holding at premium</td>
-                        <td><span class="badge badge-amber">Mixed</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Canadian Whisky</strong></td>
-                        <td><span class="badge badge-amber">Flat</span></td>
-                        <td><span class="badge badge-amber">+1%</span></td>
-                        <td>Crown Royal dominance; limited growth outside flagship</td>
-                        <td><span class="badge badge-amber">Stable</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Gin</strong></td>
-                        <td><span class="badge badge-red">&minus;3%</span></td>
-                        <td><span class="badge badge-red">&minus;2%</span></td>
-                        <td>U.S. market mature; growth entirely in UK/EU markets</td>
-                        <td><span class="badge badge-red">Weak</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Rum</strong></td>
-                        <td><span class="badge badge-amber">Flat</span></td>
-                        <td><span class="badge badge-green">+2%</span></td>
-                        <td>Premium rum rising; Captain Morgan flat; Bacard&iacute; pivoting up</td>
-                        <td><span class="badge badge-green">Improving</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Cognac/Brandy</strong></td>
-                        <td><span class="badge badge-red">&minus;8%</span></td>
-                        <td><span class="badge badge-red">&minus;5%</span></td>
-                        <td>Post-pandemic normalization; Hennessy U.S. volumes down sharply</td>
+                        <td><strong>American Whiskey</strong></td>
+                        <td>$5.2B (#3)</td>
+                        <td><span class="badge badge-red">&minus;1.8%</span></td>
+                        <td>16.1M barrels aging in Kentucky; Jim Beam halting 2026 production</td>
                         <td><span class="badge badge-red">Contracting</span></td>
                     </tr>
                     <tr>
-                        <td><strong>RTD / Spirits-Based</strong></td>
-                        <td><span class="badge badge-green">+15%</span></td>
-                        <td><span class="badge badge-green">+20%</span></td>
-                        <td>High Noon, Surfside, Cutwater leading explosive growth</td>
+                        <td><strong>Cognac &amp; Brandy</strong></td>
+                        <td>~$3.5B</td>
+                        <td><span class="badge badge-red">&minus;41% from peak</span></td>
+                        <td>Collapsed from 8.5M cases (2021) to ~5M cases; R&eacute;my Martin &minus;21.2%</td>
+                        <td><span class="badge badge-red">Crisis</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Canadian Whisky</strong></td>
+                        <td>$2.3B</td>
+                        <td><span class="badge badge-red">&minus;8.4%</span></td>
+                        <td>Jan 2026 control-state data; steepest decline of any whiskey category</td>
+                        <td><span class="badge badge-red">Declining</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scotch</strong></td>
+                        <td>~$2B</td>
+                        <td><span class="badge badge-red">&minus;7.6%</span></td>
+                        <td>Jan 2026 control-state data; 10% U.S. tariff on UK imports adding pressure</td>
+                        <td><span class="badge badge-red">Pressured</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Irish Whiskey</strong></td>
+                        <td>~$1.5B</td>
+                        <td><span class="badge badge-red">&minus;8.3%</span></td>
+                        <td>Jan 2026 control-state data softening; Jameson 3.8M U.S. cases but flat globally</td>
+                        <td><span class="badge badge-amber">Mixed</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rum</strong></td>
+                        <td>~$1.5B</td>
+                        <td><span class="badge badge-red">&minus;6.5%</span></td>
+                        <td>Standard rum declining; premium aged rum growing 12% annually since 2020</td>
+                        <td><span class="badge badge-amber">Bifurcated</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gin</strong></td>
+                        <td>~$0.8B</td>
+                        <td><span class="badge badge-red">&minus;3%</span></td>
+                        <td>U.S. mature; UK down 3.2% volume; flavored gin segment collapsed</td>
+                        <td><span class="badge badge-red">Declining</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>RTD Spirits-Based</strong></td>
+                        <td>$3.8B</td>
+                        <td><span class="badge badge-green">+16.4%</span></td>
+                        <td>High Noon, Surfside, Cutwater; cannibalizing entry-price spirits and beer</td>
                         <td><span class="badge badge-green">Strong</span></td>
                     </tr>
                 </tbody>
@@ -957,43 +971,56 @@
 
     <!-- Distillery Closures -->
     <div class="category-section">
-        <h3>Distillery Closures &amp; Consolidation: U.S. and Scotland</h3>
-        <p class="cat-sub">The producer base is shrinking rapidly. This is the distressed asset pipeline.</p>
+        <h3>Distillery Closures &amp; Major Producer Retrenchment</h3>
+        <p class="cat-sub">Named closures, bankruptcies, and production halts. This is the distressed asset pipeline.</p>
         <div class="vs-row">
             <div class="vs-box loser">
-                <h4>United States (2024&ndash;2025)</h4>
+                <h4>U.S. Closures &amp; Bankruptcies (2024&ndash;2025)</h4>
                 <ul>
-                    <li>American Craft Spirits Association reports net negative distillery count for first time since tracking began</li>
-                    <li>Estimated 10&ndash;15% of craft distillers closed or consolidated 2023&ndash;2025</li>
-                    <li>Distribution access remains the primary killer: 89% of craft distillers split just 11% of craft revenue</li>
-                    <li>Notable closures: several mid-size operations in Kentucky, Colorado, New York</li>
-                    <li>Sazerac, Heaven Hill, and Constellation acquiring distressed assets at discount</li>
-                    <li>MGP Ingredients restructured after contract distilling demand collapsed</li>
+                    <li><strong>Stoli Group USA &amp; Kentucky Owl</strong> &mdash; Chapter 11 (Nov 2024), converted to Chapter 7 liquidation (Jan 2026). $100&ndash;500M assets; $78M secured debt to Fifth Third Bank</li>
+                    <li><strong>Devils River Distillery</strong> (San Antonio) &mdash; Chapter 11, May 2025. Distribution in 36 states</li>
+                    <li><strong>Boston Harbor Distillery</strong> &mdash; Chapter 11, March 2025. $500K&ndash;1M assets</li>
+                    <li><strong>Montana Distillery</strong> &mdash; Chapter 11, closed March 2025. Regulatory constraints (2 oz/day tasting limit)</li>
+                    <li><strong>JJ Pfister Distilling</strong> (Sacramento) &mdash; Closed Nov 2024, Chapter 11 filed May 2025. $1.6M debt</li>
+                    <li><strong>Black Button Distilling</strong> (Rochester, NY) &mdash; Acquired by Blackstar Sept 2025; staff fired, liquidated by Nov 2025</li>
+                    <li><strong>Brown-Forman:</strong> 648 layoffs (12% workforce), Louisville cooperage closed. $70&ndash;80M annual savings target</li>
+                    <li><strong>Jim Beam (Suntory):</strong> Full production suspension at Clermont, KY for all of 2026</li>
+                    <li><strong>Diageo:</strong> Halted Lebanon, KY distillery; $625M cost-cutting program; CEO Debra Crew departed</li>
+                    <li><strong>MGP Ingredients:</strong> Gross profits fell 68% in 2024; cutting whiskey output 2026</li>
                 </ul>
             </div>
             <div class="vs-box loser">
-                <h4>Scotland (2024&ndash;2025)</h4>
+                <h4>Scotland &amp; Ireland (2024&ndash;2025)</h4>
                 <ul>
-                    <li>Diageo mothballed or reduced production at multiple sites including capacity cuts across Highland and Lowland operations</li>
-                    <li>Smaller independents hit hardest: Arbikie, GlenWyvis, and several newer operations scaled back or paused</li>
-                    <li>Scotch Whisky Association reported export value down ~9% in 2023, partial recovery in 2024 but below 2021&ndash;2022 peaks</li>
-                    <li>Barrel inventory overhang: years of capacity expansion meeting declining demand</li>
-                    <li>Chinese market collapse: Scotch exports to China fell ~30% as economic slowdown hit luxury spending</li>
-                    <li>Some mothballed distilleries being quietly marketed to investors at 40&ndash;60% of replacement cost</li>
+                    <li><strong>Teaninich Distillery</strong> (Diageo, Highland) &mdash; Production paused; feeds Johnnie Walker blends</li>
+                    <li><strong>Roseisle Maltings</strong> (Diageo, Speyside) &mdash; Suspended through June 2026+; &pound;40M facility opened 2009</li>
+                    <li><strong>Speyside Distillery</strong> (Kingussie) &mdash; Permanently ceased distilling May 2025; &ldquo;ghost distillery&rdquo; status</li>
+                    <li><strong>Isle of Harris Distillery</strong> &mdash; Production pause, job cuts April 2025, citing tariff uncertainty</li>
+                    <li><strong>Lindores Abbey Distillery</strong> (Fife) &mdash; Staff redundancies amid closure rumors</li>
+                    <li><strong>Glenglassaugh &amp; BenRiach</strong> (Brown-Forman) &mdash; Shared production model reducing capacity</li>
+                    <li><strong>Waterford Whisky</strong> (Ireland) &mdash; Shut down November 2024</li>
+                    <li><strong>Midleton Distillery</strong> (Irish Distillers/Pernod) &mdash; Production paused March 2025; &euro;250M expansion delayed</li>
+                    <li><strong>Killarney Brewing &amp; Distilling</strong> (Ireland) &mdash; Closed 2024&ndash;2025</li>
+                    <li><strong>Nephin Whiskey</strong> (Ireland) &mdash; Liquidator appointed</li>
                 </ul>
             </div>
         </div>
+    </div>
+
+    <div class="callout">
+        <h4>The Inventory Overhang: The Underreported Risk</h4>
+        <p>16.1 million barrels of American whiskey sit aging in Kentucky warehouses as of January 2025&mdash;triple the 2012 level. Barrel taxes alone cost the industry $75 million in 2025, up 27% in a single year. Through August 2025, industry-wide whiskey production fell 28% versus the prior year. In Mexico, the Tequila Regulatory Council reported 525 million liters of tequila in barrel or awaiting bottling at end-2023&mdash;nearly one full year of production. Diageo&rsquo;s inventory-to-revenue ratio rose from 34% (FY2022) to 43% (2025), with the value of aged stock reaching $8.6 billion. When Diageo, Beam Suntory, and Brown-Forman resume production at idle facilities, that will be the clearest signal the supply-demand balance has normalized. Currently, those facilities are dark through at least mid-2026.</p>
     </div>
 
     <!-- ============================================================ -->
     <!-- SECTION 2: TRADE AND TARIFF ENVIRONMENT -->
     <!-- ============================================================ -->
     <h2 class="section-title">II. Trade &amp; Tariff Environment</h2>
-    <p class="section-subtitle">American spirits face a multi-front trade war. The damage is structural, not cyclical.</p>
+    <p class="section-subtitle">Record $2.4 billion in 2024 exports masked a pre-tariff stockpiling surge. The Q2 2025 cliff reveals the real picture.</p>
 
     <div class="chart-container">
-        <h3>American Whiskey Export Trajectory (Index: 2018 = 100)</h3>
-        <p class="chart-desc">Export value indexed to 2018 pre-tariff levels. The 2025 reimposition of EU tariffs is projected to reverse recovery gains. Data from DISCUS, SWA, and USDA FAS.</p>
+        <h3>U.S. Spirits Export Collapse by Market (Q2 2025 vs. Q2 2024)</h3>
+        <p class="chart-desc">Year-over-year change in export value by destination. Canada, UK, Japan, and EU collectively represent ~70% of all U.S. spirits exports. Data: DISCUS Mid-Year Export Report 2025.</p>
         <div class="chart-wrap">
             <canvas id="exportChart"></canvas>
         </div>
@@ -1001,128 +1028,123 @@
 
     <div class="category-section">
         <h3>Retaliatory Tariff Timeline</h3>
-        <p class="cat-sub">How American spirits became collateral damage in broader trade disputes.</p>
+        <p class="cat-sub">American spirits as collateral damage in broader trade disputes.</p>
         <div class="timeline">
             <div class="timeline-item crisis">
                 <div class="timeline-year">June 2018</div>
                 <div class="timeline-event">EU imposes 25% retaliatory tariff on American whiskey</div>
-                <div class="timeline-detail">Response to U.S. steel and aluminum tariffs under Section 232. Bourbon exports to EU immediately begin declining.</div>
+                <div class="timeline-detail">Response to U.S. steel/aluminum tariffs. Bourbon exports to EU decline 20% over three years ($552M to $439M).</div>
             </div>
             <div class="timeline-item opportunity">
-                <div class="timeline-year">June 2021</div>
-                <div class="timeline-event">EU-U.S. tariff suspension agreement</div>
-                <div class="timeline-detail">Five-year suspension of retaliatory tariffs. American whiskey exports begin recovering.</div>
+                <div class="timeline-year">January 2022</div>
+                <div class="timeline-event">EU suspends 25% tariff under bilateral metals agreement</div>
+                <div class="timeline-detail">American whiskey exports to EU recover from $439M to $699M by 2024 (+60%).</div>
             </div>
             <div class="timeline-item caution">
-                <div class="timeline-year">2022&ndash;2024</div>
-                <div class="timeline-event">Partial export recovery but below pre-2018 trajectory</div>
-                <div class="timeline-detail">Bourbon regained some EU market share, but competitors (Irish, Japanese) had filled the gap. Recovery slower than expected.</div>
+                <div class="timeline-year">2024</div>
+                <div class="timeline-event">EU importers front-load inventory ahead of tariff threat</div>
+                <div class="timeline-detail">Record $2.4B total U.S. spirits exports driven largely by pre-tariff stockpiling, not organic demand.</div>
             </div>
             <div class="timeline-item crisis">
-                <div class="timeline-year">Early 2025</div>
-                <div class="timeline-event">New U.S. tariff actions trigger retaliatory escalation</div>
-                <div class="timeline-detail">Broader U.S. trade actions prompt EU to reimpose and increase tariffs on American spirits to 50%. UK follows with its own retaliatory tariffs. Canada retaliates on American spirits imports.</div>
-            </div>
-            <div class="timeline-item crisis">
-                <div class="timeline-year">March 2025</div>
-                <div class="timeline-event">SCOTUS tariff ruling reshapes landscape</div>
-                <div class="timeline-detail">Supreme Court ruling on executive tariff authority creates new legal framework. Industry scrambles to assess implications.</div>
+                <div class="timeline-year">February&ndash;March 2025</div>
+                <div class="timeline-event">Multi-front retaliation begins</div>
+                <div class="timeline-detail">Canada: 25% retaliatory tariff + Ontario LCBO pulls all U.S. spirits from shelves. EU proposes 50% tariff on bourbon in &euro;95B retaliation package. UK&rsquo;s 10% U.S. tariff on UK goods (including Scotch) creates asymmetric friction.</div>
             </div>
             <div class="timeline-item pivot">
-                <div class="timeline-year">2025&ndash;2026</div>
-                <div class="timeline-event">Export market share permanently shifts</div>
-                <div class="timeline-detail">Irish, Japanese, and domestic European producers consolidate gains made during American absence. Second-mover advantage becomes entrenched.</div>
+                <div class="timeline-year">April 2025</div>
+                <div class="timeline-event">EU excludes bourbon from final retaliatory list</div>
+                <div class="timeline-detail">Following intensive DISCUS lobbying and &ldquo;Toasts Not Tariffs&rdquo; coalition. Bourbon retains duty-free EU access&mdash;but the arrangement is politically fragile.</div>
+            </div>
+            <div class="timeline-item crisis">
+                <div class="timeline-year">Q2 2025</div>
+                <div class="timeline-event">Export cliff materializes</div>
+                <div class="timeline-detail">Total exports &minus;9% YoY. Canada &minus;85%. UK &minus;25%. Japan &minus;23%. EU &minus;12%. American whiskey &minus;13%, vodka &minus;14%, brandy &minus;12%.</div>
             </div>
         </div>
     </div>
 
     <div class="category-section">
         <h3>Key Trade Relationships</h3>
-        <p class="cat-sub">The tariff environment is affecting multiple producing regions and categories simultaneously.</p>
+        <p class="cat-sub">Each producing region faces distinct tariff and sentiment dynamics.</p>
         <div class="pillars">
             <div class="pillar-card">
                 <div class="pillar-header">
-                    <span class="pillar-num red">!</span>
+                    <span class="pillar-num amber">!</span>
                     <span class="pillar-name">U.S. &rarr; EU</span>
                 </div>
-                <p class="pillar-example">50% retaliatory tariff on American whiskey reimposed 2025. EU is the largest export market for bourbon. <strong class="loser">DISCUS estimates $600M+ in cumulative lost export revenue since 2018.</strong> European consumers have shifted to Irish and local whiskey alternatives. Shelf space, once lost, is extremely difficult to recover.</p>
+                <p class="pillar-example">Bourbon currently enters duty-free after April 2025 exclusion&mdash;but the arrangement is not a treaty and can be reversed. <strong class="loser">DISCUS estimates $600M+ in cumulative lost export revenue since 2018.</strong> European consumers shifted to Irish and local whiskey during the tariff years. Shelf space recovery will be slow even with zero tariff.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num red">!</span>
-                    <span class="pillar-name">U.S. &rarr; UK</span>
+                    <span class="pillar-name">U.S. &rarr; Canada</span>
                 </div>
-                <p class="pillar-example">UK imposed its own retaliatory tariffs on American spirits in 2025. Post-Brexit UK pursuing independent trade policy means no automatic alignment with EU tariff pauses. <strong class="loser">British consumer sentiment toward American products has deteriorated alongside broader political tensions.</strong></p>
+                <p class="pillar-example"><strong class="loser">Exports collapsed 85% in Q2 2025 to $9.6M.</strong> Brown-Forman reported 62% Canada sales decline. Ontario LCBO pulled all U.S. spirits; over $80M in product sits in Ontario warehouses. CEO Lawson Whiting: physical product removal &ldquo;worse than a tariff.&rdquo; Among Canadians over 60, 84% say they are &ldquo;very unlikely&rdquo; to purchase U.S. alcohol in the future.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num amber">&#x26A0;</span>
                     <span class="pillar-name">U.S. &harr; Mexico</span>
                 </div>
-                <p class="pillar-example">USMCA provides framework but bilateral tensions create uncertainty for tequila and mezcal. <strong>Mexico exports ~$4B in tequila to the U.S. annually.</strong> Any tariff escalation would hit both sides: American consumers pay more, Mexican producers lose their primary market. Agave price collapse creates separate supply-side pressure.</p>
+                <p class="pillar-example"><strong>USMCA-compliant tequila and mezcal are exempt from the 25% Mexico tariff.</strong> This is the category&rsquo;s moat. U.S. tequila imports: $5.2B in 2024. Agave spirits represent 22% of U.S. beverage alcohol revenue. WSWA estimates tariff exposure would endanger 14,000 American jobs and $2.5B in economic output. <span class="loser">USMCA review in 2026 introduces renegotiation risk.</span></p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num red">!</span>
                     <span class="pillar-name">U.S. &harr; France</span>
                 </div>
-                <p class="pillar-example">Cognac faces reciprocal tariff exposure. LVMH (Hennessy) and R&eacute;my Martin are navigating both U.S. tariffs on French goods and French retaliatory tariffs on American spirits. <strong class="loser">Hennessy U.S. volumes dropped ~15% in 2024.</strong> China simultaneously imposing anti-dumping duties on EU brandy, squeezing French producers from two directions.</p>
-            </div>
-            <div class="pillar-card">
-                <div class="pillar-header">
-                    <span class="pillar-num amber">&#x26A0;</span>
-                    <span class="pillar-name">U.S. &rarr; Canada &amp; Japan</span>
-                </div>
-                <p class="pillar-example">Canada retaliated with tariffs on American spirits. Japan&rsquo;s market remains relatively open but American whiskey share has eroded as Japanese consumers prefer domestic premium whisky. <strong>Suntory and Nikka have used the disruption to consolidate home-market dominance.</strong></p>
+                <p class="pillar-example">20% U.S. tariff on EU goods (April 2025), adjusted to 15% (August 2025). <strong class="loser">FEVS projected 20% decline in French spirits U.S. sales.</strong> Simultaneously, China imposed 27&ndash;35% anti-dumping duties on EU brandy (July 2025). From January to May 2025, Chinese imports of EU brandy fell 60% in volume, 75% in value. Cognac squeezed from two directions.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num amber">&#x26A0;</span>
                     <span class="pillar-name">Russia &amp; Eastern Europe</span>
                 </div>
-                <p class="pillar-example">Post-Ukraine invasion: Western brands exited Russia, creating a $2B+ market vacuum. Russian domestic vodka producers and Central Asian brands are filling the gap. <strong>Stoli rebranded to &ldquo;Stoli&rdquo; (from Stolichnaya) and relocated HQ to Luxembourg, but brand damage persists in Western markets.</strong> Non-Western markets (India, Middle East, Africa) are seeing increased Russian vodka availability.</p>
+                <p class="pillar-example">Post-Ukraine invasion: UK Russian Standard sales collapsed 75% in two weeks. NielsenIQ estimated &pound;111M market gap. <strong>Stoli rebranded, relocated to Luxembourg, went 100% non-Russian sourcing&mdash;then filed Chapter 7 bankruptcy in the U.S.</strong> Beluga relocated production to Montenegro. Russian Standard pursuing India, Nigeria, China distribution via Allied Blenders and NEXT International.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-header">
+                    <span class="pillar-num amber">&#x26A0;</span>
+                    <span class="pillar-name">Anti-American Sentiment</span>
+                </div>
+                <p class="pillar-example">62% of global marketers at U.S. multinationals report anti-American sentiment is hurting overseas sales (AMA New York/Gravity Research, 2025). Anti-Americanism on French social media surged 5&ndash;10x in early 2025. <strong class="loser">Canada&rsquo;s boycott is the most operationally severe consumer sentiment event in modern spirits export history.</strong></p>
             </div>
         </div>
-    </div>
-
-    <div class="callout">
-        <h4>Anti-American Consumer Sentiment: A Real but Hard-to-Quantify Headwind</h4>
-        <p>Beyond tariff barriers, American spirits face a less measurable but real headwind: deteriorating brand perception of American products in key export markets. European polling data from 2024&ndash;2025 shows declining favorability toward U.S. brands across multiple categories, not just spirits. Canadian consumer boycotts of American goods intensified in early 2025. While sentiment is harder to track than tariff rates, the behavioral data is visible in shelf-space allocation and menu listings&mdash;European bars and retailers report actively diversifying away from American-produced spirits toward Irish, Japanese, and domestic alternatives.</p>
     </div>
 
     <!-- ============================================================ -->
     <!-- SECTION 3: CATEGORY DEEP DIVES -->
     <!-- ============================================================ -->
     <h2 class="section-title">III. Category-by-Category: Crisis &amp; Opportunity</h2>
-    <p class="section-subtitle">Where each spirits category sits in the restructuring, and what it means for capital allocation.</p>
+    <p class="section-subtitle">Where each category sits in the restructuring. Named brands, companies, and data points.</p>
 
     <!-- American Whiskey -->
     <div class="category-section">
         <h3>American Whiskey (Bourbon &amp; Rye)</h3>
-        <p class="cat-sub">The flagship American spirits category is contracting on both fronts: domestic softness and export collapse.</p>
+        <p class="cat-sub">Revenue declined 1.8% to $5.2B. Two consecutive years of contraction&mdash;first time in over two decades.</p>
         <div class="cat-body">
-            <p>American whiskey&rsquo;s decade-long boom is definitively over. Domestic volumes declined an estimated 1.5% in 2024, driven by softness at the entry price tier ($15&ndash;25) while premium and ultra-premium held. The export picture is worse: EU retaliatory tariffs at 50% have made bourbon uncompetitive against untariffed Irish and Scottish competitors in Europe&rsquo;s bars and shops. DISCUS data shows cumulative export losses exceeding $600 million since the tariff cycle began in 2018.</p>
-            <p>The inventory overhang is the underreported story. During the boom years (2015&ndash;2022), major producers&mdash;Beam Suntory, Brown-Forman, Heaven Hill, Sazerac, Wild Turkey (Campari)&mdash;aggressively expanded warehouse capacity and barrel fills. Those barrels are now maturing into a market that cannot absorb them at pre-2022 price expectations. Brown-Forman&rsquo;s stock declined ~25% from its 2022 peak, partly reflecting investor concern over Jack Daniel&rsquo;s international headwinds.</p>
+            <p>The inventory overhang is the story. 16.1 million barrels aging in Kentucky&mdash;triple the 2012 level. Barrel taxes up 27% to ~$75M. Brown-Forman (Jack Daniel&rsquo;s) cut 12% of its global workforce and closed its cooperage, projecting $70&ndash;80M in savings. Jim Beam suspended all distilling at Clermont for 2026. MGP Ingredients, the industry bellwether for bulk whiskey, saw gross profits collapse 68%. Through August 2025, industry-wide whiskey production fell 28%.</p>
+            <p>Exports: American whiskey accounted for 54% of all U.S. spirits exports at $1.3B in 2024 but fell 13% in Q2 2025. The EU currently offers duty-free access, but the political fragility of that arrangement means the export thesis remains contingent. Canada is effectively closed. Brown-Forman reported a 62% sales decline in Canada; CFO Leanne Cunningham called it &ldquo;a significant impact to our top-line performance.&rdquo;</p>
         </div>
         <div class="vs-row">
             <div class="vs-box loser">
                 <h4>Headwinds</h4>
                 <ul>
-                    <li>50% EU tariff makes bourbon ~30% more expensive than Irish whiskey on European shelves</li>
-                    <li>Barrel inventory overhang: years of excess production meeting slowing demand</li>
-                    <li>Entry-price bourbon losing shelf space to RTD spirits-based cocktails</li>
-                    <li>Craft bourbon segment consolidating rapidly: too many brands, not enough distribution</li>
-                    <li>Brown-Forman, Beam Suntory facing margin pressure on international business</li>
+                    <li>16.1M barrel overhang: decade of overinvestment meeting declining demand</li>
+                    <li>Jim Beam, Heaven Hill, Maker&rsquo;s Mark, Wild Turkey all reduced production</li>
+                    <li>Canada exports &minus;85%; Brown-Forman Canada &minus;62%</li>
+                    <li>Entry-price bourbon losing to RTD and tequila</li>
+                    <li>Ultra-premium segment decelerated to +6% (down from double digits)</li>
                 </ul>
             </div>
             <div class="vs-box winner">
                 <h4>Where Value Remains</h4>
                 <ul>
-                    <li>Ultra-premium single barrel and limited editions still command pricing power</li>
-                    <li>Maker's Mark Estate Whiskey positioning as terroir-driven premium succeeding</li>
-                    <li>Woodford Reserve growing via premiumization despite category headwinds</li>
-                    <li>Rye whiskey subcategory showing relative resilience (+3% volume)</li>
-                    <li>Distressed craft acquisition targets available at 30&ndash;50% of peak valuations</li>
+                    <li>Distressed craft acquisition targets at 30&ndash;50% of peak valuations</li>
+                    <li>Bulk whiskey at historic lows (MGP restructuring)</li>
+                    <li>Woodford Reserve and Maker&rsquo;s Mark premium positioning holding</li>
+                    <li>Contract distilling capacity at Lawrenceburg available at discount</li>
+                    <li>EU duty-free access, if it holds, still the #1 export opportunity</li>
                 </ul>
             </div>
         </div>
@@ -1131,62 +1153,39 @@
     <!-- Scotch -->
     <div class="category-section">
         <h3>Scotch Whisky</h3>
-        <p class="cat-sub">Scotland&rsquo;s flagship industry faces its worst contraction in decades, but premium single malt remains a fortress.</p>
+        <p class="cat-sub">Global exports &pound;5.4B (down 3.7% in value) but volume up 3.9%. Price mix compressing across the supply chain.</p>
         <div class="cat-body">
-            <p>The Scotch Whisky Association reported global export values declining ~9% in 2023, with partial recovery in 2024 but still below 2021&ndash;2022 peak levels. The damage is concentrated in blended Scotch (Johnnie Walker, Dewar&rsquo;s, Famous Grouse), which faces commoditization pressure and lost shelf space to Irish whiskey and local competitors globally. Single malt, by contrast, continues to command premiums&mdash;The Macallan, Glenfiddich, and Glenlivet are holding value through scarcity positioning and collector-market dynamics.</p>
-            <p>The distillery closure wave is accelerating. Diageo has reduced production across its portfolio, mothballing capacity that was expanded during the 2014&ndash;2019 boom. Smaller independent distilleries opened during the craft whisky wave (2015&ndash;2020) are particularly vulnerable: many have yet to release aged spirit and are burning cash waiting for barrels to mature. This creates an attractive acquisition landscape&mdash;operational distilleries with maturing stock, available at significant discounts to replacement cost.</p>
-        </div>
-        <div class="vs-row">
-            <div class="vs-box loser">
-                <h4>Under Pressure</h4>
-                <ul>
-                    <li>Blended Scotch volume declining globally: commoditized, losing to Irish whiskey</li>
-                    <li>China export collapse: &minus;30% as economic slowdown hits luxury spending</li>
-                    <li>New distillery closures: Arbikie, GlenWyvis, and others scaling back</li>
-                    <li>Diageo reducing capacity; barrel inventory overhang mirroring U.S.</li>
-                    <li>UK domestic market flat as gin and RTD categories capture share</li>
-                </ul>
-            </div>
-            <div class="vs-box winner">
-                <h4>Resilient Pockets</h4>
-                <ul>
-                    <li>Single malt premiums holding: Macallan, rare bottlings appreciating as assets</li>
-                    <li>Indian and Southeast Asian markets still growing for Scotch</li>
-                    <li>Distressed distillery acquisitions: operational sites at 40&ndash;60% of replacement cost</li>
-                    <li>Scotch has tariff-free access to EU&mdash;competitive advantage over bourbon</li>
-                    <li>Whisky tourism infrastructure adds value beyond liquid alone</li>
-                </ul>
-            </div>
+            <p>India is now the #1 Scotch export market by volume (192 million bottles, +13.8% value). China collapsed: &minus;31.5%, dropping from 5th to 10th most valuable market. The U.S.&mdash;still #1 by value&mdash;faces a new 10% tariff that Diageo quantified at ~$200M annual exposure. Pernod Ricard estimated combined U.S./China tariff impact at ~$207M. A 750mL bottle faces ~$1.92 in port-level tariff translating to over $12 at bar retail.</p>
+            <p>The UK-India FTA is the single largest latent catalyst. India&rsquo;s 150% whisky import tariff, if reduced, could unlock &pound;1 billion in incremental Scotch export value over five years per the SWA. Meanwhile, Port Ellen (Islay) reopened after 40 years and Rosebank completed its first distillation&mdash;confirming that ultra-premium investment continues even as mass-market contracts.</p>
         </div>
     </div>
 
     <!-- Irish Whiskey -->
     <div class="category-section">
         <h3>Irish Whiskey</h3>
-        <p class="cat-sub">The clearest structural winner in the current environment. Irish whiskey is gaining share in every market American bourbon is losing.</p>
+        <p class="cat-sub">Exports crossed &euro;1B in 2024 (+13%). The structural winner in global whiskey&mdash;with caveats.</p>
         <div class="cat-body">
-            <p>Irish whiskey is the best-positioned category in global spirits right now. Jameson (Pernod Ricard) grew 6% globally in 2024, making it the world&rsquo;s fastest-growing major whiskey brand. The category benefits from a rare alignment of structural tailwinds: tariff-free access to the EU and UK (unlike bourbon), a smooth flavor profile that appeals to the mixability-driven younger consumer, accessible price positioning ($25&ndash;45), and an authenticity narrative that resonates globally. Ireland&rsquo;s whiskey renaissance has seen the number of operational distilleries grow from 4 in 2010 to over 40 by 2025.</p>
-            <p>Proper No. Twelve (Conor McGregor&rsquo;s brand, now owned by Proximo Spirits) demonstrated that celebrity Irish whiskey can work where celebrity bourbon and tequila have struggled&mdash;because the underlying category has structural momentum. Tullamore D.E.W. (William Grant &amp; Sons), Bushmills (Proximo), and Teeling are all growing. New distillery openings continue across Ireland, with investment capital flowing into the category from European and Asian sources.</p>
+            <p>Irish whiskey exports recovered to &euro;1.03 billion in 2024, gaining share in the UK (+8%), India (+23%), and Japan (+27%). Jameson sold 10.7 million cases globally in FY2024 and holds ~77% U.S. share and ~70% globally. India grew 52% and China 99% for the brand. Bushmills committed &pound;70M to expand maturation capacity from 1.6M to 4.5M cases/year. The category has grown from 4 operational distilleries in 2010 to approximately 50 by 2024.</p>
+            <p>The caveat: over 90% of Irish distilleries have paused or reduced production by mid-2025. Midleton itself paused production in March 2025. Waterford Whisky shut down November 2024. Killarney and Nephin entered liquidation. The boom overbuilt supply infrastructure that the current demand environment cannot support. Jameson&rsquo;s concentration risk is real: when one brand represents 70%+ of a category, &ldquo;category growth&rdquo; is really single-brand performance.</p>
         </div>
         <div class="vs-row">
             <div class="vs-box winner">
-                <h4>Why Irish Whiskey Wins Now</h4>
+                <h4>Why Irish Wins Now</h4>
                 <ul>
-                    <li>Zero tariff exposure to EU/UK markets&mdash;direct competitive advantage over bourbon</li>
-                    <li>Jameson +6% globally in 2024; fastest-growing major whiskey brand</li>
-                    <li>Smooth flavor profile aligns with younger consumer preference for mixability</li>
-                    <li>40+ operational distilleries, up from 4 in 2010: supply infrastructure now in place</li>
-                    <li>Accessible premium pricing ($25&ndash;45) hits the sweet spot identified in our brand success analysis</li>
-                    <li>European and Asian investor capital actively flowing into Irish distillery projects</li>
+                    <li>Zero tariff exposure to EU/UK&mdash;direct advantage over bourbon</li>
+                    <li>Exports &euro;1B+ in 2024, up 13% after recovering from 14% prior-year dip</li>
+                    <li>Jameson: India +52%, China +99%&mdash;genuine emerging market diversification</li>
+                    <li>Bushmills &pound;70M expansion: CVC Capital Partners signaling medium-term confidence</li>
+                    <li>Accessible pricing ($25&ndash;45) in the sweet spot identified in brand success analysis</li>
                 </ul>
             </div>
             <div class="vs-box neutral-box">
                 <h4>Risks to Monitor</h4>
                 <ul>
-                    <li>Overcapacity risk if all 40+ distilleries mature simultaneously into a slowing market</li>
-                    <li>Dependence on Jameson: Pernod Ricard represents ~70% of category volume</li>
-                    <li>Quality dilution risk if growth outpaces aged stock availability</li>
-                    <li>Category could face its own tariff exposure in future trade disputes</li>
+                    <li>90%+ of distilleries paused or reduced production mid-2025</li>
+                    <li>Waterford, Killarney, Nephin closures show long tail is vulnerable</li>
+                    <li>Jameson = 70%+ of category; concentration risk is structural</li>
+                    <li>U.S. control-state data shows Irish whiskey &minus;8.3% in Jan 2026</li>
                 </ul>
             </div>
         </div>
@@ -1195,156 +1194,57 @@
     <!-- Japanese Whisky -->
     <div class="category-section">
         <h3>Japanese Whisky</h3>
-        <p class="cat-sub">Supply scarcity as a moat: Japanese whisky is the luxury play in a down market.</p>
+        <p class="cat-sub">Supply scarcity as a moat. Suntory increased output 32% from 2018&ndash;2023, but exports grew 140% over the same period.</p>
         <div class="cat-body">
-            <p>Japanese whisky occupies a unique position in the restructuring: demand consistently exceeds supply, creating natural price insulation. Suntory (Yamazaki, Hakushu, Hibiki) and Nikka (Yoichi, Miyagikyo) command ultra-premium pricing that is largely unaffected by the volume-driven dynamics pressuring other categories. A bottle of Yamazaki 18 retails for $400+ and appreciates on secondary markets. Hibiki Japanese Harmony, positioned at $60&ndash;80, serves as the category&rsquo;s volume gateway and maintains strong sell-through despite the broader market softness.</p>
-            <p>The category&rsquo;s constraint is production capacity. Japanese distillers deliberately maintain scarcity by limiting output and maintaining strict age-statement integrity, the opposite of the American and Scottish capacity expansions that are now creating inventory overhangs. Export growth has been running at 10&ndash;15% annually to the U.S. and Europe, limited primarily by allocation rather than demand.</p>
-        </div>
-        <div class="vs-row">
-            <div class="vs-box winner">
-                <h4>Structural Advantages</h4>
-                <ul>
-                    <li>Supply scarcity maintains pricing power in a deflationary environment</li>
-                    <li>Luxury positioning insulates from volume-market dynamics</li>
-                    <li>Secondary market appreciation creates collector/investor demand layer</li>
-                    <li>Suntory&rsquo;s Beam acquisition provides global distribution infrastructure</li>
-                    <li>Japanese whisky standards (2021 labeling rules) increased category credibility</li>
-                </ul>
-            </div>
-            <div class="vs-box neutral-box">
-                <h4>Investment Considerations</h4>
-                <ul>
-                    <li>Limited acquisition targets: Suntory and Nikka dominate; few independents</li>
-                    <li>Production lead times measured in decades, not years</li>
-                    <li>Yen weakness has boosted export competitiveness but may reverse</li>
-                    <li>&ldquo;Japanese-style&rdquo; whiskies from other countries creating category confusion</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Canadian Whisky -->
-    <div class="category-section">
-        <h3>Canadian Whisky</h3>
-        <p class="cat-sub">Crown Royal&rsquo;s kingdom: a one-brand category with quiet positioning advantages.</p>
-        <div class="cat-body">
-            <p>Canadian whisky is dominated so thoroughly by Crown Royal (Diageo) that the category&rsquo;s performance is essentially Crown Royal&rsquo;s performance. Crown Royal is the best-selling whisky brand in the U.S. by volume, moved approximately 10 million 9-liter cases in 2024, and its flavored extensions (Crown Royal Peach, Apple, Blackberry) have been among the most successful product launches in the entire spirits industry. The Crown Royal Blackberry launch alone added an estimated 625,000 incremental cases.</p>
-            <p>The opportunity for Canadian whisky lies in the trade environment: Canada&rsquo;s retaliatory tariffs on American spirits create a protected home market for Canadian producers, while Canadian whisky faces relatively lower tariff barriers in most export markets compared to American bourbon. If American whiskey&rsquo;s export weakness persists, Canadian whisky has an opening to capture European and Asian market share that bourbon is losing.</p>
-        </div>
-    </div>
-
-    <!-- Vodka -->
-    <div class="category-section">
-        <h3>Vodka</h3>
-        <p class="cat-sub">The largest U.S. spirits category by volume is contracting, but shelf space dynamics are shifting fast.</p>
-        <div class="cat-body">
-            <p>Vodka remains the #1 spirits category in the U.S. by volume (~80M cases) but is declining at the overall category level. The story is bifurcated: Tito&rsquo;s Handmade Vodka (~12M cases, $2.6B retail) is roughly flat, holding an extraordinary ~44% value share of the U.S. vodka market on the back of its authentic founder narrative and disciplined single-product strategy. Every other major vodka brand is declining: Smirnoff (&minus;5%), Absolut (&minus;3.3%), Svedka (&minus;3%), New Amsterdam (&minus;8%).</p>
-            <p>The post-Russian brand pullback created real shelf-space dynamics. After the Ukraine invasion, retailers removed or deprioritized Russian-origin brands, creating opportunity for American, Polish, and French vodkas to gain facings. Stolichnaya rebranded to &ldquo;Stoli&rdquo; and relocated headquarters to Luxembourg but still faces brand perception headwinds. The shelf-space gains from the pullback are now entrenched and unlikely to reverse even if geopolitical conditions change.</p>
-        </div>
-        <div class="vs-row">
-            <div class="vs-box winner">
-                <h4>Opportunity Areas</h4>
-                <ul>
-                    <li>Shelf space vacated by Russian brands is permanently reallocated</li>
-                    <li>Polish vodka (Belvedere, Chopin, &#x17B;ubr&oacute;wka) gaining premium positioning</li>
-                    <li>American craft vodka has opportunity but lacks distribution infrastructure</li>
-                    <li>Flavored vodka and vodka-based RTD still growing despite base category decline</li>
-                </ul>
-            </div>
-            <div class="vs-box loser">
-                <h4>Structural Challenges</h4>
-                <ul>
-                    <li>Category commoditization: consumers see vodka as interchangeable at value tier</li>
-                    <li>Value vodka segment in structural decline with no floor visible</li>
-                    <li>American vodka exports face same tariff headwinds as bourbon</li>
-                    <li>Health and moderation trends disproportionately impact &ldquo;big pour&rdquo; categories like vodka</li>
-                </ul>
-            </div>
+            <p>The fundamental math: demand consistently exceeds supply. Suntory invested &yen;10 billion (~$63.5M) into Yamazaki and Hakushu. Storage capacity grew 50%+ since 2016. And it&rsquo;s still not enough. 2021 labeling standards tightened what qualifies as &ldquo;Japanese whisky,&rdquo; further reducing apparent supply. The return of Nikka Yoichi 10&mdash;a sought-after age-statement expression&mdash;is a positive signal. Widespread availability of affordable, age-stated Japanese whisky is unlikely before 2030.</p>
+            <p>Export value did decline 12.8% in 2024, dragged by China, Hong Kong, and soft U.S. demand. U.S. exports fell 23% in Q2 2025 under the 10% Japan tariff. But premium Japanese expressions face lower demand elasticity than standard-tier products. The category remains investable at ultra-premium and collectible levels.</p>
         </div>
     </div>
 
     <!-- Tequila & Mezcal -->
     <div class="category-section">
         <h3>Tequila &amp; Mezcal</h3>
-        <p class="cat-sub">Growth decelerating sharply. The agave crash, celebrity brand fatigue, and tariff vulnerability converge.</p>
+        <p class="cat-sub">Don Julio overtook Tito&rsquo;s as #1 U.S. brand by retail value ($2.6B). But category deceleration, agave crash, and 75+ celebrity brands signal peak saturation.</p>
         <div class="cat-body">
-            <p>Tequila was the spirits industry&rsquo;s growth engine from 2015&ndash;2023, expanding at 10%+ annual volume growth and even faster in revenue as premiumization accelerated. That era is definitively ending. Volume growth decelerated to an estimated 1.2% in 2024, and the category faces a triple headwind: agave price collapse destabilizing Mexican producers, celebrity brand oversaturation exhausting consumer novelty, and tariff vulnerability under any USMCA renegotiation.</p>
-            <p>The agave story deserves investor attention. Years of high prices (~25 pesos/kg peak) incentivized massive overplanting; that supply is now maturing into a market where demand growth has stalled, driving prices below 3 pesos/kg in some regions. This benefits buyers (brands and bottlers) in the short term but is devastating the independent farming communities that sustain the agave supply chain. At least 40% of registered agave farmers have exited or are at risk of exiting production, creating potential future supply shortfalls that mirror the last cycle (2000&ndash;2004).</p>
-            <p>Celebrity tequila brands&mdash;at last count over 75 active celebrity-backed tequila products&mdash;are approaching market saturation. Casamigos (Diageo, acquired from George Clooney for $1B in 2017) has seen volumes flatten. Newer entrants (Teremana/The Rock, Lobos 1707/LeBron James, Casa Del Sol/Eva Longoria) face an increasingly crowded shelf and skeptical consumers. The additive-free movement is creating a quality bifurcation that favors heritage producers over celebrity entrants.</p>
-        </div>
-        <div class="vs-row">
-            <div class="vs-box winner">
-                <h4>Where Tequila Value Concentrates</h4>
-                <ul>
-                    <li>Additive-free certified brands growing at 10x the category rate</li>
-                    <li>Mezcal maintaining +8% growth off smaller base; artisanal positioning insulates</li>
-                    <li>Heritage brands (Fortaleza, Tapatio, G4, Pasote) gaining share from celebrity glut</li>
-                    <li>Agave price crash benefits established buyers with long-term supply contracts</li>
-                    <li>Don Julio and Patron (both Diageo/Bacardi owned) maintain premium pricing power</li>
-                </ul>
-            </div>
-            <div class="vs-box loser">
-                <h4>Category Risks</h4>
-                <ul>
-                    <li>USMCA tariff vulnerability: any trade disruption immediately impacts $4B import flow</li>
-                    <li>Celebrity brand oversaturation: 75+ celebrity tequilas competing for finite shelf space</li>
-                    <li>Agave farmer attrition creating potential future supply crisis (3&ndash;5 year lag)</li>
-                    <li>Casamigos volume flattening signals peak celebrity-brand premium</li>
-                    <li>Category growth deceleration from 10%+ to ~1% in two years</li>
-                </ul>
-            </div>
+            <p>Tequila/mezcal revenue grew 2.9% to $6.7B in 2024&mdash;a dramatic deceleration from the double-digit growth of 2020&ndash;2022. Don Julio (+28.2% to 4.4M cases) is the standout. Patr&oacute;n fell to ~2.8M cases, lowest since pre-2020. Jose Cuervo declined 2% at ~4.92M cases. Casamigos faces authenticity lawsuits alongside Don Julio and 818 over &ldquo;100% agave&rdquo; labeling claims.</p>
+            <p>The agave story: spot prices crashed to MXN 2/kg (~$0.10) from peaks above MXN 25/kg. Registered growers more than quadrupled since 2018. A 500-million-liter agave surplus&mdash;&ldquo;the Tequila Lake&rdquo;&mdash;benefits buyers short-term but is devastating independent farming communities. Euromonitor projects &minus;0.8% volume in 2025 but +6.2% value, confirming premiumization is the only surviving growth mechanism. USMCA protection is the category&rsquo;s tariff moat, but the 2026 review introduces renegotiation risk.</p>
         </div>
     </div>
 
-    <!-- Gin -->
+    <!-- Vodka -->
     <div class="category-section">
-        <h3>Gin</h3>
-        <p class="cat-sub">A tale of two markets: declining in the U.S., resilient in the UK/EU where British brands dominate.</p>
+        <h3>Vodka</h3>
+        <p class="cat-sub">$7.2B revenue, still #1 by volume (~74M cases). Tito&rsquo;s declined for the first time ever (&minus;1.5% to ~12M cases).</p>
         <div class="cat-body">
-            <p>Gin in the U.S. is in structural decline (&minus;3% volume 2024), a mature category that peaked during the craft cocktail boom of 2015&ndash;2019 and never found a second act for the American consumer. However, gin remains vital in the UK and EU markets, where Fever-Tree&rsquo;s tonic revolution and brands like Hendrick&rsquo;s (William Grant), Tanqueray (Diageo), and Beefeater (Pernod Ricard) sustain a premium cocktail culture that has no parallel in the U.S.</p>
-            <p>For investors, the UK gin market&rsquo;s interplay with American spirits is relevant: as UK consumers reduce purchases of American spirits (bourbon) due to tariff-driven price increases and sentiment shifts, that spending is partly redirecting to domestic gin. This dynamic reinforces gin&rsquo;s position in the UK market even as it weakens in the U.S. British gin producers are net beneficiaries of the American spirits trade disruption in their home market.</p>
+            <p>The post-Russian brand displacement is permanent. Russian vodka imports fell 79% since 2011 to just 1.3% of U.S. imports before the Ukraine invasion accelerated the exit. Stoli&rsquo;s Chapter 7 liquidation closes the chapter on the brand&rsquo;s U.S. operations. The shelf space vacated by Russian brands was absorbed by existing American and European brands. Beluga relocated production to Montenegro. Russian Standard is pivoting to India and Nigeria.</p>
+            <p>The structural challenge: RTD spirits-based cocktails and tequila are capturing the occasions vodka once owned. Super-premium vodka declined 15% in 2024. The value segment has no floor. Tito&rsquo;s&mdash;at $2.5B retail&mdash;holds extraordinary market share but even it contracted for the first time.</p>
         </div>
     </div>
 
-    <!-- Rum -->
-    <div class="category-section">
-        <h3>Rum</h3>
-        <p class="cat-sub">Caribbean producers are positioned to fill gaps left by contracting American and Scottish spirits.</p>
-        <div class="cat-body">
-            <p>Rum is the sleeper opportunity in the current restructuring. Overall U.S. rum volume is flat, but the category is bifurcating rapidly: standard rum (Captain Morgan, Bacardi Superior) is declining, while premium and aged rum is growing at 5&ndash;8% annually. Diplomatico, Appleton Estate, Ron Zacapa, Flor de Ca&ntilde;a, Mount Gay, and Foursquare are all gaining share in the $30&ndash;80 premium segment that whiskey drinkers are increasingly exploring.</p>
-            <p>Caribbean rum producers benefit from a structural advantage that is unique in the current environment: they face minimal tariff exposure in most Western markets, have lower production costs than Scottish or American distillers, produce in denominations of origin that carry authentic provenance (Barbados, Jamaica, Guatemala, Nicaragua), and sit outside the geopolitical fault lines affecting American, French, and Russian spirits. For European consumers looking to diversify away from tariff-inflated bourbon and politically complex Scotch, Caribbean rum offers a clean narrative.</p>
-        </div>
-        <div class="vs-row">
-            <div class="vs-box winner">
-                <h4>Rum&rsquo;s Structural Advantages</h4>
-                <ul>
-                    <li>Minimal tariff exposure in most Western markets</li>
-                    <li>Lower production costs than Scotch or bourbon distillers</li>
-                    <li>Authentic provenance narratives (Barbados, Jamaica, Guatemala)</li>
-                    <li>Premium aged rum growing 5&ndash;8% annually; whiskey drinkers trading across</li>
-                    <li>Foursquare (Barbados) emerging as the &ldquo;cult distillery&rdquo; equivalent of Pappy Van Winkle</li>
-                    <li>Climate suitability: tropical aging accelerates maturation (less capital tied up)</li>
-                </ul>
-            </div>
-            <div class="vs-box neutral-box">
-                <h4>Challenges</h4>
-                <ul>
-                    <li>Category perception still skews cheap/mixer in many markets</li>
-                    <li>Fragmented production across dozens of Caribbean nations complicates scale</li>
-                    <li>Sugar price volatility affects input costs</li>
-                    <li>Limited marketing infrastructure compared to whiskey and tequila</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cognac & Brandy -->
+    <!-- Cognac -->
     <div class="category-section">
         <h3>Cognac &amp; Brandy</h3>
-        <p class="cat-sub">Squeezed from two directions: U.S. tariffs and Chinese anti-dumping duties are crushing the French category.</p>
+        <p class="cat-sub">Category in crisis. Volumes collapsed 41% from 8.5M cases (2021) to ~5M cases. Squeezed simultaneously by U.S. and Chinese tariffs.</p>
         <div class="cat-body">
-            <p>Cognac is in crisis. The French category, dominated by Hennessy (LVMH), R&eacute;my Martin (R&eacute;my Cointreau), Martell (Pernod Ricard), and Courvoisier (Beam Suntory), is caught between tariff walls on both its major export markets. U.S. tariffs on French goods have inflated cognac prices for American consumers, while China&rsquo;s anti-dumping duties on EU brandy (a retaliatory measure in a broader EU-China trade dispute) have devastated what was cognac&rsquo;s fastest-growing market.</p>
-            <p>Hennessy U.S. volumes dropped an estimated 15% in 2024. R&eacute;my Cointreau issued profit warnings citing American and Chinese headwinds. The category faces a structural question: if its two largest export markets are simultaneously behind tariff walls, where does cognac find growth? Some volume is redirecting to Southeast Asia and Africa, but these markets lack the margin structure of the U.S. and China. For investors, cognac-focused assets are distressed but recovery depends entirely on trade policy resolution&mdash;a binary political bet rather than an operational turnaround thesis.</p>
+            <p>Hennessy holds 62.3% U.S. category share at 3.2M cases (+2%&mdash;the only top-five brand to grow). R&eacute;my Martin &minus;21.2% to 622K cases. D&rsquo;Uss&eacute; &minus;18% to 525K cases. Courvoisier &minus;4.5% to 406K cases. LVMH reported 17% lower cognac/spirits revenue in Q1 2025.</p>
+            <p>China anti-dumping duties (27&ndash;35%, effective July 2025) are devastating. Chinese imports of EU brandy fell 60% in volume and 75% in value from January to May 2025. Major houses (Hennessy, R&eacute;my, Martell) received duty exemptions conditioned on minimum price floors set by Beijing&mdash;an unusual government-administered pricing mechanism. BNIC data: XO shipments fell 26.4%, while VS rose 13.7%, representing a massive downgrade in revenue quality. Investment thesis is binary: depends entirely on simultaneous U.S. and China trade resolution.</p>
+        </div>
+    </div>
+
+    <!-- Rum & Gin brief -->
+    <div class="category-section">
+        <h3>Rum: The Sleeper Opportunity</h3>
+        <p class="cat-sub">Standard rum declining, but ultra-premium rum growing 12% annually since 2020. Global luxury rum market: $1.64B, projected $2.82B by 2032 (8.2% CAGR).</p>
+        <div class="cat-body">
+            <p>Caribbean rum producers have minimal tariff exposure in most Western markets, lower production costs than Scottish or American distillers, and authentic provenance narratives (Barbados, Jamaica, Guatemala). Foursquare (Barbados) has emerged as the cult distillery equivalent of whisky&rsquo;s allocated releases&mdash;secondary market prices rival premium Scotch. Diplomatico, Appleton Estate (Campari), Mount Gay (Bacardi), and Flor de Ca&ntilde;a are gaining share in the $30&ndash;80 premium segment. Tropical aging accelerates maturation, meaning faster capital cycles than Scotch. Rhum Agricole (Martinique AOC) provides defensible quality designations comparable to whisky appellations.</p>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h3>Gin: Two Markets, Two Stories</h3>
+        <p class="cat-sub">U.S. declining (&minus;3%). UK declining (&minus;3.2% volume). Flavored gin segment collapsed. Premium IWSR forecast: &minus;5% CAGR through 2028.</p>
+        <div class="cat-body">
+            <p>The UK flavored gin boom (2018&ndash;2021) is over. Gordon&rsquo;s (Diageo) grew 9.5% in 2024 by pivoting to 0.0% ABV variants. Hendrick&rsquo;s (William Grant) and Bombay Sapphire (Bacardi) maintain premium positions but the addressable market is shrinking. UK gin is a net beneficiary of the American spirits trade disruption in its home market&mdash;as UK consumers reduce bourbon purchases due to tariff-driven price increases, that spending partly redirects to domestic gin. But this is a rearrangement within a declining category, not growth.</p>
         </div>
     </div>
 
@@ -1352,134 +1252,136 @@
     <!-- SECTION 4: FORWARD-LOOKING INDICATORS -->
     <!-- ============================================================ -->
     <h2 class="section-title">IV. Forward-Looking Indicators &amp; Capital Flow</h2>
-    <p class="section-subtitle">Where investment money is actually moving, and the signals that will separate recovery from permanent restructuring.</p>
+    <p class="section-subtitle">Where investment money is actually moving. The signals that separate recovery from permanent restructuring.</p>
 
     <div class="chart-container">
-        <h3>Opportunity Heat Map: Category &times; Region</h3>
-        <p class="chart-desc">Relative attractiveness of investment by category and region over the next 3&ndash;5 years. Based on tariff exposure, growth trajectory, asset availability, and competitive dynamics.</p>
+        <h3>Opportunity Radar: Category Investment Profile</h3>
+        <p class="chart-desc">Relative attractiveness across six dimensions for investor evaluation over 3&ndash;5 year horizon.</p>
         <div class="chart-wrap">
-            <canvas id="heatmapChart"></canvas>
+            <canvas id="radarChart"></canvas>
         </div>
     </div>
 
     <!-- Capital Flow -->
     <div class="category-section">
         <h3>Where Capital Is Actually Moving</h3>
-        <p class="cat-sub">Tracking PE, VC, and strategic acquirer activity across the spirits landscape.</p>
+        <p class="cat-sub">55 beverage alcohol acquisitions in 2024, 51 in 2025. Spirits led both years. The pattern: majors divesting, mid-tier acquiring.</p>
         <div class="pillars">
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num green">$</span>
                     <span class="pillar-name">Irish Distillery Investment</span>
                 </div>
-                <p class="pillar-example"><strong>New distillery projects funded in 2024&ndash;2025 across Ireland.</strong> European PE firms and Asian beverage companies investing in greenfield and operational Irish distillery assets. Pernod Ricard expanded Midleton capacity. William Grant investing in Tullamore expansion. Category attracting capital that previously flowed to Scottish and American projects.</p>
+                <p class="pillar-example"><strong>Bushmills: &pound;70M expansion</strong> to 4.5M cases capacity (CVC Capital Partners). Pernod Ricard&rsquo;s &euro;250M Midleton expansion delayed but committed. European PE firms and Asian beverage companies investing in Irish assets. Category attracting capital that previously flowed to Scottish and American projects.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num green">$</span>
-                    <span class="pillar-name">Premium Rum Acquisition</span>
+                    <span class="pillar-name">Major Divestitures Creating Opportunity</span>
                 </div>
-                <p class="pillar-example"><strong>Strategic acquirers moving into Caribbean rum.</strong> Campari acquired further rum assets. Diageo expanded Captain Morgan positioning toward premium. Independent Barbadian and Jamaican distilleries attracting interest from European spirits groups looking to diversify portfolios away from tariff-exposed categories.</p>
-            </div>
-            <div class="pillar-card">
-                <div class="pillar-header">
-                    <span class="pillar-num amber">$</span>
-                    <span class="pillar-name">U.S. Craft Distillery Roll-Ups</span>
-                </div>
-                <p class="pillar-example"><strong>Distressed U.S. craft operations available at 30&ndash;50% of peak valuations.</strong> Sazerac, Heaven Hill, and regional consolidators actively acquiring craft brands with established distribution but insufficient capital. Private equity interest re-emerging for platforms that can aggregate 5&ndash;10 craft brands under shared distribution infrastructure.</p>
-            </div>
-            <div class="pillar-card">
-                <div class="pillar-header">
-                    <span class="pillar-num amber">$</span>
-                    <span class="pillar-name">Scottish Distillery Deals</span>
-                </div>
-                <p class="pillar-example"><strong>Mothballed Scottish distilleries available at 40&ndash;60% of replacement cost.</strong> Indian spirits companies (particularly those with existing Scotch investments) and Asian conglomerates are the most active buyers. Existing maturing stock provides immediate inventory&mdash;a key advantage over greenfield builds. Tourism infrastructure adds secondary revenue stream.</p>
+                <p class="pillar-example"><strong>Diageo:</strong> Sold Cacique rum to La Martiniquaise; transferred C&icirc;roc to Main Street Advisors; sold East African Breweries to Asahi ($2.3B); halted Distill Ventures incubator. <strong>Campari:</strong> Bought Courvoisier ($1.2B) while shedding Cinzano (&euro;100M), Averna and Zedda Piras (&euro;100M). <strong>Pernod:</strong> Sold Campo Viejo, Jacob&rsquo;s Creek, Knappogue Castle. Targeting &euro;1B in cuts by FY2029.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
                     <span class="pillar-num green">$</span>
-                    <span class="pillar-name">RTD / Spirits-Based Ready-to-Drink</span>
+                    <span class="pillar-name">RTD / Spirits-Based</span>
                 </div>
-                <p class="pillar-example"><strong>The fastest-growing segment in spirits: +15&ndash;20% annually.</strong> High Noon (Gallo), Surfside (Stateside Brands), Cutwater (Anheuser-Busch) leading. Capital flowing both from spirits companies (defensive) and beer companies (offensive). The segment is cannibalizing entry-price spirits and beer simultaneously.</p>
+                <p class="pillar-example"><strong>+16.4% revenue to $3.8B in 2025.</strong> The only high-growth segment at scale. High Noon (Gallo), Surfside (Stateside), Cutwater (AB InBev). Cannibalizing entry-price spirits and beer simultaneously. RTD share still &lt;10% of total spirits&mdash;runway remains. Capital efficient: brand + contract production.</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-header">
-                    <span class="pillar-num red">$</span>
-                    <span class="pillar-name">Cognac: Distressed but Binary</span>
+                    <span class="pillar-num amber">$</span>
+                    <span class="pillar-name">No/Low ABV Emerging</span>
                 </div>
-                <p class="pillar-example"><strong class="loser">Cognac assets are distressed but recovery is a political bet, not an operational one.</strong> R&eacute;my Cointreau stock down ~40% from peak. Courvoisier ownership (Beam Suntory) under strategic review. Investment thesis depends entirely on U.S. and China tariff resolution&mdash;attractive if you have conviction on trade normalization, toxic if you don&rsquo;t.</p>
+                <p class="pillar-example">Growing 10% annually. Non-alcoholic spirits projected $1.2B by 2034 (7.4% CAGR). <strong>Diageo acquired Ritual Zero Proof. R&eacute;my Cointreau took stake in JNPR Spirits. AG Barr acquired Strykk.</strong> 61 million new global consumers entered no-alcohol segment in 2024 (IWSR). Strategic portfolio insurance more than core growth play.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-header">
+                    <span class="pillar-num amber">$</span>
+                    <span class="pillar-name">Mid-Tier Roll-Up Wave</span>
+                </div>
+                <p class="pillar-example"><strong>Uncle Nearest acquired Square One Organic Spirits.</strong> Heritage Distilling acquired Thinking Tree Spirits. Redwood Empire Whiskey grew 30% and acquired Savage &amp; Cooke distillery. Next Century Spirits acquiring orphaned brands from Diageo, Beam, and Pernod divestitures. Early transactions of what may become significant mid-market consolidation.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-header">
+                    <span class="pillar-num green">$</span>
+                    <span class="pillar-name">India: The Growth Market</span>
+                </div>
+                <p class="pillar-example"><strong>Indian whisky: 260M cases (2024), projected 502M by 2034 (7.6% CAGR).</strong> McDowell&rsquo;s No.1 sold 32.2M cases; Royal Stag 31M cases (+11.1%). India overtook France as #1 Scotch market by volume. UK-India FTA could cut 150% import tariff&mdash;the single largest latent catalyst in global spirits. Indian conglomerates (Tilaknagar, Radico Khaitan) expanding international footprint.</p>
             </div>
         </div>
     </div>
 
-    <!-- Recovery vs. Structural Shift Signals -->
+    <!-- Recovery Signals -->
     <div class="prediction-model">
         <h3>Recovery vs. Permanent Structural Shift</h3>
-        <p class="pm-subtitle">The seven indicators that will signal whether American spirits&rsquo; export weakness is cyclical or permanent. Monitor these to time capital deployment.</p>
+        <p class="pm-subtitle">Seven indicators to monitor. Currently: five red, two amber, zero green. This pattern favors structural shift over cyclical recovery.</p>
 
         <div class="pm-factor-row">
             <div class="pm-weight">1</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">EU-U.S. Tariff Resolution</div>
-                <div class="pm-bar"><div class="pm-bar-fill red" style="width:15%"></div></div>
+                <div class="pm-factor-name">EU-U.S. Tariff Stability</div>
+                <div class="pm-bar"><div class="pm-bar-fill amber" style="width:40%"></div></div>
             </div>
-            <div class="pm-example">Currently at 50%. Any movement toward suspension or reduction is the single most important recovery signal for bourbon exports.</div>
+            <div class="pm-example">Bourbon currently duty-free but by political contingency, not treaty. Any reversal immediately disrupts the #1 export market.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">2</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">European Bar &amp; Retail Bourbon Shelf Space</div>
-                <div class="pm-bar"><div class="pm-bar-fill red" style="width:20%"></div></div>
+                <div class="pm-factor-name">Canada Market Access</div>
+                <div class="pm-bar"><div class="pm-bar-fill red" style="width:10%"></div></div>
             </div>
-            <div class="pm-example">Track listings in major EU/UK chains. Once shelf space is lost for 3+ years, recovery becomes exponentially harder. Currently contracting.</div>
+            <div class="pm-example">Ontario ban remains in force. Consumer sentiment: 84% of over-60 Canadians &ldquo;very unlikely&rdquo; to buy U.S. alcohol. Recovery will lag any tariff resolution by 12&ndash;18 months.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">3</div>
             <div class="pm-bar-wrap">
                 <div class="pm-factor-name">U.S. Domestic Volume Inflection</div>
-                <div class="pm-bar"><div class="pm-bar-fill amber" style="width:40%"></div></div>
+                <div class="pm-bar"><div class="pm-bar-fill amber" style="width:35%"></div></div>
             </div>
-            <div class="pm-example">Two consecutive quarters of positive total spirits volume growth would signal domestic floor. Not yet visible as of Q1 2026.</div>
+            <div class="pm-example">WSWA SipSource: 2025 tracking toward 3rd consecutive negative year for core spirits depletions. Watch for two consecutive quarters of positive growth.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">4</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">Craft Distillery Net Openings</div>
+                <div class="pm-factor-name">Production Restart at Idle Facilities</div>
                 <div class="pm-bar"><div class="pm-bar-fill red" style="width:10%"></div></div>
             </div>
-            <div class="pm-example">Return to net positive openings vs. closures would signal renewed entrepreneurial confidence. Currently net negative.</div>
+            <div class="pm-example">Jim Beam, Teaninich, Roseisle, Midleton, George Dickel, Balcones all dark through mid-2026+. When they restart, supply-demand has normalized.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">5</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">Scotch Export Recovery</div>
-                <div class="pm-bar"><div class="pm-bar-fill amber" style="width:45%"></div></div>
+                <div class="pm-factor-name">China Luxury Spirits Recovery</div>
+                <div class="pm-bar"><div class="pm-bar-fill red" style="width:20%"></div></div>
             </div>
-            <div class="pm-example">SWA export data returning to 2021 peak levels would indicate global whisky demand recovery. Partial recovery underway.</div>
+            <div class="pm-example">Scotch to China &minus;31.5%. Cognac to China &minus;24% value. Anti-dumping duties formalized. No clear recovery timeline.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">6</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">China Luxury Spirits Demand</div>
-                <div class="pm-bar"><div class="pm-bar-fill red" style="width:25%"></div></div>
+                <div class="pm-factor-name">Craft Distillery Net Openings</div>
+                <div class="pm-bar"><div class="pm-bar-fill red" style="width:5%"></div></div>
             </div>
-            <div class="pm-example">China&rsquo;s luxury spending recovery would lift Scotch and cognac simultaneously. Currently depressed with no clear timeline.</div>
+            <div class="pm-example">Net &minus;787 in 12 months (25.6% decline). Return to net positive openings would signal entrepreneurial confidence. Currently accelerating negative.</div>
         </div>
         <div class="pm-factor-row">
             <div class="pm-weight">7</div>
             <div class="pm-bar-wrap">
-                <div class="pm-factor-name">Consumer Sentiment Index: American Brands Abroad</div>
-                <div class="pm-bar"><div class="pm-bar-fill red" style="width:20%"></div></div>
+                <div class="pm-factor-name">Gen Z Consumption Trajectory</div>
+                <div class="pm-bar"><div class="pm-bar-fill red" style="width:25%"></div></div>
             </div>
-            <div class="pm-example">Polling data on American product favorability in EU, UK, Canada. Currently declining. Sentiment recovery would lag tariff resolution by 12&ndash;18 months.</div>
+            <div class="pm-example">Entering legal drinking age with materially lower consumption rates than Millennials. If this cohort ages into moderation, it&rsquo;s a 15&ndash;25 year structural drag on total volume.</div>
         </div>
 
         <div class="pm-interpretation">
-            <strong>Reading the dashboard:</strong> As of March 2026, five of seven indicators are in the red zone (crisis/declining), and two show amber (mixed/early recovery). No indicators are green. This pattern is more consistent with a <strong>permanent structural shift</strong> than a cyclical correction. For investors, this means: don&rsquo;t wait for recovery to the old normal. Deploy capital into the categories and regions that are structurally gaining (Irish whiskey, premium rum, Japanese whisky, RTD) rather than betting on a return to the pre-2018 American spirits export paradigm.
+            <strong>Reading the dashboard:</strong> As of March 2026, five of seven indicators are red (crisis/declining), two are amber (fragile/mixed). Zero are green. IWSR characterizes the status spirits decline as &ldquo;more cyclical than structural&rdquo;&mdash;but the Gen Z consumption data and inventory overhang suggest the recovery, when it comes, will restore a smaller market at lower margin than the 2019&ndash;2022 peak. For investors: <strong>deploy capital into categories and regions that are structurally gaining (Irish whiskey, premium rum, Japanese whisky, RTD, India) rather than betting on a full return to the pre-2018 American spirits export paradigm.</strong>
         </div>
     </div>
 
-    <!-- Distressed Asset Landscape -->
+    <!-- ============================================================ -->
+    <!-- SECTION 5: DISTRESSED ASSETS -->
+    <!-- ============================================================ -->
     <h2 class="section-title">V. The Distressed Asset Landscape</h2>
     <p class="section-subtitle">What&rsquo;s available, at what price, and who is buying.</p>
 
@@ -1491,52 +1393,66 @@
                         <th>Asset Type</th>
                         <th>Region</th>
                         <th>Discount to Peak</th>
-                        <th>Buyer Profile</th>
+                        <th>Active Buyer Profile</th>
                         <th>Key Consideration</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td><strong>Stoli U.S. / Kentucky Owl</strong></td>
+                        <td>U.S. (Chapter 7)</td>
+                        <td><span class="badge badge-green">Liquidation pricing</span></td>
+                        <td>Trustees managing; acquisition targets for spirits companies</td>
+                        <td>Kentucky Owl aged bourbon stock is primary tangible asset</td>
+                    </tr>
+                    <tr>
                         <td><strong>Mothballed Scotch Distilleries</strong></td>
-                        <td>Scotland (Highland, Speyside)</td>
+                        <td>Scotland</td>
                         <td><span class="badge badge-green">40&ndash;60%</span></td>
-                        <td>Indian spirits companies, Asian conglomerates, PE funds</td>
-                        <td>Maturing stock included; tourism infrastructure adds value</td>
+                        <td>Indian conglomerates (Tilaknagar, Radico), Asian beverage groups, PE</td>
+                        <td>Maturing stock included; tourism infrastructure adds value; Diageo reduced output creates future scarcity</td>
                     </tr>
                     <tr>
                         <td><strong>U.S. Craft Distilleries</strong></td>
                         <td>Kentucky, Colorado, New York, Pacific NW</td>
                         <td><span class="badge badge-green">30&ndash;50%</span></td>
-                        <td>Sazerac, Heaven Hill, regional consolidators, PE roll-up platforms</td>
-                        <td>Distribution access is the value driver; brands alone insufficient</td>
+                        <td>Sazerac, Heaven Hill, Redwood Empire, Uncle Nearest, PE roll-ups</td>
+                        <td>Distribution access is the value driver; brand alone insufficient</td>
                     </tr>
                     <tr>
-                        <td><strong>American Whiskey Barrel Inventory</strong></td>
-                        <td>Kentucky, Tennessee, Indiana</td>
-                        <td><span class="badge badge-amber">15&ndash;25%</span></td>
-                        <td>Non-distiller producers, contract bottlers, export-focused buyers</td>
-                        <td>Overhang creating buyer&rsquo;s market for sourced whiskey</td>
+                        <td><strong>Bulk Whiskey Inventory</strong></td>
+                        <td>Kentucky, Indiana</td>
+                        <td><span class="badge badge-amber">Significant</span></td>
+                        <td>NDPs, contract bottlers, export-oriented buyers</td>
+                        <td>MGP&rsquo;s 68% profit decline = buyer&rsquo;s market for sourced whiskey</td>
                     </tr>
                     <tr>
                         <td><strong>Celebrity Tequila Brands</strong></td>
-                        <td>Mexico / U.S.</td>
+                        <td>U.S./Mexico</td>
                         <td><span class="badge badge-green">40&ndash;70%</span></td>
-                        <td>Strategic acquirers cherry-picking brands with actual distribution</td>
-                        <td>Most have no independent value; look for ones with real retail velocity</td>
+                        <td>Strategic acquirers cherry-picking brands with retail velocity</td>
+                        <td>75+ celebrity tequilas; most have zero independent enterprise value</td>
                     </tr>
                     <tr>
                         <td><strong>Cognac Producer Stakes</strong></td>
                         <td>Cognac, France</td>
                         <td><span class="badge badge-amber">20&ndash;40%</span></td>
-                        <td>Strategic (LVMH, Pernod, Beam Suntory) or contrarian PE</td>
-                        <td>Binary trade-policy bet; high risk, high reward if tariffs resolve</td>
+                        <td>Campari (bought Courvoisier $1.2B), contrarian PE</td>
+                        <td>Binary trade-policy bet. R&eacute;my Cointreau stock &minus;40% from peak</td>
                     </tr>
                     <tr>
-                        <td><strong>Contract Distilling Capacity (U.S.)</strong></td>
-                        <td>Indiana, Kentucky</td>
-                        <td><span class="badge badge-green">30&ndash;50%</span></td>
-                        <td>Spirits companies seeking flexible production capacity</td>
-                        <td>MGP Ingredients restructured; capacity available at historical lows</td>
+                        <td><strong>Orphaned Major-House Brands</strong></td>
+                        <td>Global</td>
+                        <td><span class="badge badge-amber">Varies</span></td>
+                        <td>Next Century Spirits, Cobblestone Brands</td>
+                        <td>Diageo, Pernod, Campari all shedding non-core brands at accelerating pace</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Irish Craft Distilleries</strong></td>
+                        <td>Ireland</td>
+                        <td><span class="badge badge-amber">30&ndash;50%</span></td>
+                        <td>European PE, Asian beverage groups</td>
+                        <td>Waterford, Killarney, Nephin closures show vulnerability; look for aged stock</td>
                     </tr>
                 </tbody>
             </table>
@@ -1547,28 +1463,28 @@
     <!-- SECTION 6: INVESTMENT THESIS -->
     <!-- ============================================================ -->
     <h2 class="section-title">VI. Investment Thesis: Where to Deploy Capital</h2>
-    <p class="section-subtitle">Four actionable investment themes for the 3&ndash;5 year horizon.</p>
+    <p class="section-subtitle">Four actionable themes for the 3&ndash;5 year horizon.</p>
 
     <div class="opportunity-matrix">
         <div class="opp-card">
             <span class="opp-rating high">HIGH CONVICTION</span>
             <h4>1. Irish Whiskey Infrastructure</h4>
-            <p>The most attractive risk/reward in spirits. Structural tailwinds (tariff-free access, consumer preference shift, category momentum), growing supply infrastructure, multiple entry points from operational distillery acquisition to brand licensing. Target: emerging Irish distilleries with aged stock and export capability. Expected return: strong, driven by category growth and potential multiple expansion as bourbon exporters remain locked out of EU.</p>
+            <p>Best risk/reward in spirits. Tariff-free EU/UK access, consumer preference shift, Jameson&rsquo;s India +52% / China +99% growth vectors. Entry points: emerging distilleries with aged stock and export capability, or mid-tier brands being shed by Pernod&rsquo;s restructuring (Knappogue Castle model). Bushmills &pound;70M expansion signals category-level confidence from sophisticated capital.</p>
         </div>
         <div class="opp-card">
             <span class="opp-rating high">HIGH CONVICTION</span>
             <h4>2. Premium Caribbean Rum</h4>
-            <p>Undervalued category with minimal tariff exposure, authentic provenance, growing consumer interest from whiskey crossover drinkers, and lower production costs. Target: Barbadian, Jamaican, and Guatemalan distilleries with aged stock and quality reputation. The &ldquo;Foursquare effect&rdquo; is creating a cult premium segment. Aging advantage (tropical climate accelerates maturation) means faster capital cycle than Scotch.</p>
-        </div>
-        <div class="opp-card">
-            <span class="opp-rating medium">MEDIUM CONVICTION</span>
-            <h4>3. Distressed U.S. &amp; Scottish Assets</h4>
-            <p>Attractive entry prices (30&ndash;60% discount to peak) but requires operational expertise and patience. U.S. craft roll-ups need distribution infrastructure to unlock value. Scottish mothballed distilleries offer maturing stock + tourism but demand is uncertain. Best for strategic acquirers or experienced spirits PE operators. Not for generalist investors.</p>
+            <p>Undervalued. Minimal tariff exposure, authentic provenance, 12% annual ultra-premium growth since 2020, whiskey-crossover consumer bridge in place. Tropical aging = faster capital cycles than Scotch. Target: Barbadian, Jamaican, Guatemalan distilleries with aged stock. The Foursquare effect is creating cult demand. Projected $2.82B luxury rum market by 2032.</p>
         </div>
         <div class="opp-card">
             <span class="opp-rating high">HIGH CONVICTION</span>
-            <h4>4. RTD / Spirits-Based Ready-to-Drink</h4>
-            <p>The only high-growth segment at scale (+15&ndash;20% annually). Cannibalizing both entry-price spirits and beer. Capital efficient (brand + contract production). Key risk is category maturation, but runway remains: RTD spirits-based share is still &lt;10% of total spirits in most markets. High Noon&rsquo;s success proves the model; look for brands with differentiated positioning and distribution partnerships.</p>
+            <h4>3. RTD Spirits-Based</h4>
+            <p>Only high-growth segment at scale: +16.4% to $3.8B. Cannibalizing entry-price spirits and beer. Capital efficient (brand + contract production). RTD spirits share still &lt;10% of total&mdash;significant runway. Key risk is maturation, but High Noon and Surfside prove the model scales. Look for differentiated brands with distribution partnerships.</p>
+        </div>
+        <div class="opp-card">
+            <span class="opp-rating medium">MEDIUM CONVICTION</span>
+            <h4>4. Distressed U.S. &amp; Scottish Assets</h4>
+            <p>Attractive pricing (30&ndash;60% discount to peak) but requires operational expertise and patience. U.S. craft roll-ups need distribution infrastructure. Scottish mothballed distilleries offer maturing stock + tourism but demand is uncertain. Stoli/Kentucky Owl liquidation is highest-profile opportunity. Best for strategic acquirers or experienced spirits PE operators, not generalist investors.</p>
         </div>
     </div>
 
@@ -1576,91 +1492,448 @@
     <div class="anti-pattern">
         <h3>Capital Traps to Avoid</h3>
         <ul>
-            <li><strong>Betting on bourbon export recovery without tariff resolution:</strong> Don&rsquo;t invest in American whiskey export capacity until the EU tariff situation resolves. Shelf space, once lost for 5+ years, does not come back at the same terms.</li>
-            <li><strong>Celebrity spirits brand acquisitions:</strong> 75+ celebrity tequilas, dozens of celebrity-backed whiskey and vodka brands. Most have zero enterprise value independent of their famous founder. Unless the brand has genuine retail velocity (check NielsenIQ scan data, not PR claims), it&rsquo;s a lifestyle vanity project, not a business.</li>
-            <li><strong>Cognac without trade conviction:</strong> Cognac assets look cheap for a reason. Recovery depends on simultaneous improvement in U.S.-EU and EU-China trade relations. That&rsquo;s two binary political bets layered on top of each other. Only for investors with specific trade-policy insight or very long time horizons.</li>
-            <li><strong>Undifferentiated craft spirits:</strong> The craft spirits segment has a ruthless power law: ~11% of producers capture ~89% of revenue. Acquiring a craft brand without secured distribution is acquiring a brand without a business. The distribution gap is the first thing to diligence.</li>
-            <li><strong>Catching falling knives in value vodka:</strong> The value vodka segment ($8&ndash;15) is in permanent structural decline. Health trends, seltzer competition, and RTD substitution create a long-term ceiling. Don&rsquo;t invest in volume recovery at the bottom of the spirits market.</li>
+            <li><strong>Betting on bourbon export recovery without tariff certainty:</strong> EU access is by political contingency, not treaty. The 2026 environment can reverse at any point. Don&rsquo;t invest in export-dependent American whiskey capacity until trade frameworks are durable.</li>
+            <li><strong>Celebrity spirits brand acquisitions:</strong> 75+ celebrity tequilas. Most have zero enterprise value independent of their famous founder. Casamigos, Don Julio, and 818 face class-action lawsuits over 100% agave claims. Unless the brand has genuine scan data velocity, pass.</li>
+            <li><strong>Cognac without trade conviction:</strong> Recovery depends on simultaneous U.S. and China resolution. R&eacute;my Cointreau&rsquo;s XO exposure (&minus;26.4% volume) is acute. Only for investors with specific trade-policy insight.</li>
+            <li><strong>Undifferentiated craft spirits:</strong> 89% of craft producers share 11% of revenue. Acquiring a brand without secured distribution is acquiring a brand without a business.</li>
+            <li><strong>Value vodka:</strong> Super-premium vodka down 15% in 2024. The segment is in permanent structural decline from RTD substitution, health trends, and tequila migration.</li>
         </ul>
     </div>
 
     <!-- ============================================================ -->
     <!-- CONCLUSION -->
     <!-- ============================================================ -->
-
     <div class="formula-box">
         <div class="formula-label">Conclusion</div>
         <h3>The Map Has Changed. Read the New One.</h3>
-        <p class="formula-intro">The global spirits industry is not collapsing&mdash;it is restructuring. The $340 billion global market is not shrinking; it is reallocating. Capital that was concentrated in American whiskey exports, Scottish distillery expansion, and celebrity brand launches is being released and redirected. The investors who profit from this restructuring will be those who stop waiting for the old map to come back and start navigating by the new one.</p>
+        <p class="formula-intro">The global spirits industry is not collapsing&mdash;it is restructuring. Capital that was concentrated in American whiskey exports, Scottish distillery expansion, and celebrity brand launches is being released and redirected. The $340 billion global market is not shrinking; it is reallocating. The investors who profit will be those who stop waiting for the old map to come back.</p>
         <div class="formula-factors">
             <span class="formula-factor"><span class="factor-icon">&#x1F1EE;&#x1F1EA;</span> Irish Whiskey</span>
             <span class="formula-plus">+</span>
-            <span class="formula-factor"><span class="factor-icon">&#x1F3DD;</span> Premium Caribbean Rum</span>
+            <span class="formula-factor"><span class="factor-icon">&#x1F3DD;</span> Premium Rum</span>
             <span class="formula-plus">+</span>
             <span class="formula-factor"><span class="factor-icon">&#x1F1EF;&#x1F1F5;</span> Japanese Whisky</span>
             <span class="formula-plus">+</span>
             <span class="formula-factor"><span class="factor-icon">&#x1F96B;</span> RTD Spirits</span>
             <span class="formula-plus">+</span>
+            <span class="formula-factor"><span class="factor-icon">&#x1F1EE;&#x1F1F3;</span> India</span>
+            <span class="formula-plus">+</span>
             <span class="formula-factor"><span class="factor-icon">&#x1F3ED;</span> Distressed Assets</span>
-            <span class="formula-plus">=</span>
-            <span class="formula-factor"><span class="factor-icon">&#x2192;</span> The New Opportunity Set</span>
         </div>
     </div>
 
     <!-- ============================================================ -->
-    <!-- SOURCES -->
+    <!-- CLIENT CUSTOMIZATION MODULE -->
     <!-- ============================================================ -->
-    <div class="sources">
-        <h3>Data Sources &amp; References</h3>
+    <div class="client-module" id="custom-analysis">
+        <span class="cm-label">Corporate Client Services</span>
+        <h3>Custom Version of This Analysis Available</h3>
+        <p class="cm-intro">This public report uses industry-level data from DISCUS, SWA, IWSR, NielsenIQ, and other sources cited below. A client-specific version layers in your proprietary data to produce strategic recommendations specific to your portfolio and market position. The customized analysis benchmarks your holdings against the industry trends documented here and identifies opportunities and risks relevant to your specific brands, markets, and strategic priorities.</p>
+
+        <h4 style="font-size:0.9rem; margin-bottom:0.75rem; color:var(--text);">Proprietary data that enhances the analysis:</h4>
+        <div class="cm-grid">
+            <div class="cm-item">SKU-level volume and revenue performance by market and channel</div>
+            <div class="cm-item">Distributor sell-through rates by region</div>
+            <div class="cm-item">On-premise versus off-premise sales mix by brand</div>
+            <div class="cm-item">Export market performance by country and customer</div>
+            <div class="cm-item">Pricing and margin data by SKU and channel</div>
+            <div class="cm-item">Inventory levels and depletions data</div>
+            <div class="cm-item">Consumer research and brand equity scores</div>
+            <div class="cm-item">Trade spend and promotional ROI by market</div>
+            <div class="cm-item">New product launch performance data</div>
+            <div class="cm-item">Customer concentration and key account performance</div>
+            <div class="cm-item">Supply chain costs and production capacity utilization</div>
+            <div class="cm-item">M&amp;A targets under consideration or due diligence data</div>
+        </div>
+
+        <div class="cm-contact">
+            <p>The custom analysis benchmarks your portfolio against the category-level data in this report, identifies brand-specific exposure to the tariff and contraction dynamics documented here, and maps your strategic options with the same data-grounded, defensible methodology.</p>
+            <a href="mailto:zillah.bahar@gmail.com?subject=Custom%20Spirits%20Crisis%20%26%20Opportunity%20Analysis%20Inquiry">Inquire About Custom Analysis</a>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPREHENSIVE BIBLIOGRAPHY -->
+    <!-- ============================================================ -->
+    <div class="sources" id="sources">
+        <h3>Data Sources &amp; Bibliography</h3>
+        <p class="sources-intro">Complete bibliography of all data sources used in this analysis, with descriptions and access information. Sources marked <span class="source-sub">SUBSCRIPTION</span> require paid access.</p>
 
         <div class="source-category">
-            <h4>Industry Data</h4>
-            <div class="sources-grid">
-                <span>Distilled Spirits Council of the United States (DISCUS) &mdash; Annual Economic Briefing 2024, 2025</span>
-                <span>Scotch Whisky Association (SWA) &mdash; Export Statistics 2023, 2024</span>
-                <span>International Wine &amp; Spirits Research (IWSR) &mdash; Global Spirits Data 2024</span>
-                <span>NielsenIQ &mdash; U.S. Off-Premise Spirits Scan Data 2024&ndash;2025</span>
-                <span>Impact Databank &mdash; Top 100 Spirits Brands 2024</span>
-                <span>NABCA &mdash; Control State Spirits Sales Data 2024</span>
-                <span>American Craft Spirits Association (ACSA) &mdash; Annual Industry Report 2024</span>
+            <h4>Primary Industry Data</h4>
+
+            <div class="source-entry">
+                <span class="source-name">DISCUS</span>
+                <span class="source-desc">Distilled Spirits Council of the United States. Annual Economic Briefing 2024/2025, Mid-Year Export Report 2025, 2024 Export Report. U.S. supplier revenue, volume, category breakdowns, export data by market.</span>
+                <span class="source-link"><a href="https://distilledspirits.org/news/distilled-spirits-council-annual-economic-briefing-spirits-industry-holds-steady-in-market-share-amid-economic-challenges-in-2024/" target="_blank">Annual Briefing</a> | <a href="https://distilledspirits.org/news/american-spirits-exports-2025-mid-year-report-u-s-spirits-exports-decline-sharply-in-second-quarter/" target="_blank">Mid-Year Export</a> | <a href="https://www.distilledspirits.org/wp-content/uploads/2025/04/American-Export-Report-Final.pdf" target="_blank">2024 Export PDF</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">IWSR</span>
+                <span class="source-desc">International Wine &amp; Spirits Research. Global spirits volume and value data, premiumization trends, no/low ABV segment sizing, PE investment analysis. <span class="source-sub">SUBSCRIPTION</span></span>
+                <span class="source-link"><a href="https://www.theiwsr.com/" target="_blank">theiwsr.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">NielsenIQ</span>
+                <span class="source-desc">U.S. off-premise spirits scan data 2024&ndash;2025. Brand-level volume and revenue, market share, pricing. <span class="source-sub">SUBSCRIPTION</span></span>
+                <span class="source-link"><a href="https://nielseniq.com/" target="_blank">nielseniq.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Impact Databank</span>
+                <span class="source-desc">Top 100 spirits brands rankings, category volume and revenue estimates by brand. <span class="source-sub">SUBSCRIPTION</span></span>
+                <span class="source-link"><a href="https://www.shankennewsdaily.com/" target="_blank">Via Shanken News Daily</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">NABCA</span>
+                <span class="source-desc">National Alcohol Beverage Control Association. Control-state spirits sales data through January 2026.</span>
+                <span class="source-link"><a href="https://www.nabca.org/" target="_blank">nabca.org</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">SWA</span>
+                <span class="source-desc">Scotch Whisky Association. 2024 global export figures (&pound;5.4B), market-by-market breakdown, distillery operating data.</span>
+                <span class="source-link"><a href="https://www.scotch-whisky.org.uk/newsroom/2024-export-figures/" target="_blank">2024 Export Figures</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">BNIC</span>
+                <span class="source-desc">Bureau National Interprofessionnel du Cognac. 2024 shipment data (166M bottles), export values by region, product mix (VS/VSOP/XO), yield decisions.</span>
+                <span class="source-link"><a href="https://blog.cognac-expert.com/cognac-market-update-2025-insights-forecast/" target="_blank">Via Cognac Expert</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">ACSA</span>
+                <span class="source-desc">American Craft Spirits Association. Annual industry report 2024, craft distillery count data, craft export volumes.</span>
+                <span class="source-link"><a href="https://americancraftspirits.org/" target="_blank">americancraftspirits.org</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">CGA Strategy</span>
+                <span class="source-desc">On-premise spirits sales data, consumption trends, bar and restaurant channel analysis. <span class="source-sub">SUBSCRIPTION</span></span>
+                <span class="source-link"><a href="https://cgastrategy.com/" target="_blank">cgastrategy.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">WSWA SipSource</span>
+                <span class="source-desc">Wine &amp; Spirits Wholesalers of America. Depletions data, category forecasting, distributor sell-through trends.</span>
+                <span class="source-link"><a href="https://www.wswa.org/news/sipsource-2025-q2-report-highlights-persistent-category-headwinds-shifting-consumer-trends-and-signs-of-continued-stabilization" target="_blank">Q2 2025 Report</a></span>
             </div>
         </div>
 
         <div class="source-category">
-            <h4>Trade &amp; Tariff Data</h4>
-            <div class="sources-grid">
-                <span>USDA Foreign Agricultural Service (FAS) &mdash; GATS Export Data</span>
-                <span>European Commission &mdash; Retaliatory Tariff Schedules 2018&ndash;2025</span>
-                <span>U.S. International Trade Commission &mdash; HTS Spirits Category Data</span>
-                <span>USMCA Text &amp; Implementation Reports</span>
-                <span>UK Trade Policy Observatory &mdash; Post-Brexit Spirits Tariff Analysis</span>
+            <h4>Trade, Tariff &amp; Government Data</h4>
+
+            <div class="source-entry">
+                <span class="source-name">USDA FAS</span>
+                <span class="source-desc">U.S. Department of Agriculture, Foreign Agricultural Service. Global Agricultural Trade System (GATS) export data for spirits categories.</span>
+                <span class="source-link"><a href="https://apps.fas.usda.gov/gats/" target="_blank">GATS Database</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">TTB</span>
+                <span class="source-desc">U.S. Alcohol and Tobacco Tax and Trade Bureau. Distillery permits, production reports, regulatory filings.</span>
+                <span class="source-link"><a href="https://www.ttb.gov/" target="_blank">ttb.gov</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">HMRC</span>
+                <span class="source-desc">UK HM Revenue &amp; Customs. UK trade data for spirits imports/exports, post-Brexit tariff schedules.</span>
+                <span class="source-link"><a href="https://www.gov.uk/government/organisations/hm-revenue-customs" target="_blank">gov.uk/hmrc</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">European Commission</span>
+                <span class="source-desc">Retaliatory tariff schedules 2018&ndash;2025, &euro;95B retaliation package details, bourbon exemption documentation.</span>
+                <span class="source-link"><a href="https://policy.trade.ec.europa.eu/" target="_blank">EU Trade Policy</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">USMCA / USTR</span>
+                <span class="source-desc">United States-Mexico-Canada Agreement text, USMCA compliance frameworks for tequila/mezcal geographic designation.</span>
+                <span class="source-link"><a href="https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement" target="_blank">USTR USMCA</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">USITC</span>
+                <span class="source-desc">U.S. International Trade Commission. HTS spirits category import/export data.</span>
+                <span class="source-link"><a href="https://www.usitc.gov/" target="_blank">usitc.gov</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">KDA</span>
+                <span class="source-desc">Kentucky Distillers&rsquo; Association. Aging barrel inventory data (16.1M barrels), barrel tax figures, distillery census.</span>
+                <span class="source-link"><a href="https://kybourbon.com/" target="_blank">kybourbon.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">CRT</span>
+                <span class="source-desc">Consejo Regulador del Tequila. Tequila inventory data (525M liters), production statistics, registered grower counts.</span>
+                <span class="source-link"><a href="https://www.crt.org.mx/" target="_blank">crt.org.mx</a></span>
             </div>
         </div>
 
         <div class="source-category">
-            <h4>Industry Reporting</h4>
-            <div class="sources-grid">
-                <a href="https://www.shankennewsdaily.com/" target="_blank">Shanken News Daily</a>
-                <a href="https://www.thespiritsbusiness.com/" target="_blank">The Spirits Business</a>
-                <a href="https://www.drinksint.com/" target="_blank">Drinks International</a>
-                <a href="https://vinepair.com/" target="_blank">VinePair</a>
-                <a href="https://www.cnbc.com/" target="_blank">CNBC</a>
-                <a href="https://www.reuters.com/" target="_blank">Reuters</a>
-                <a href="https://www.bloomberg.com/" target="_blank">Bloomberg</a>
-                <a href="https://cgastrategy.com/" target="_blank">CGA Strategy</a>
+            <h4>Company Filings &amp; Financial Reports</h4>
+
+            <div class="source-entry">
+                <span class="source-name">Diageo PLC</span>
+                <span class="source-desc">Annual Report, Half-Year Results FY2024/2025. North American sales, tariff exposure ($200M), cost-cutting program ($625M), CEO transition, inventory-to-revenue ratios.</span>
+                <span class="source-link"><a href="https://www.diageo.com/en/investors" target="_blank">Diageo Investors</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Brown-Forman Corp.</span>
+                <span class="source-desc">10-K filings, earnings calls. Jack Daniel&rsquo;s performance, Canada &minus;62%, workforce reduction (648 jobs), cooperage closure.</span>
+                <span class="source-link"><a href="https://investors.brown-forman.com/" target="_blank">Brown-Forman IR</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Pernod Ricard</span>
+                <span class="source-desc">Annual Results FY2024/2025. Jameson data (10.7M cases), portfolio restructuring (Gold/Crystal), &euro;1B cost target, Midleton production pause.</span>
+                <span class="source-link"><a href="https://www.pernod-ricard.com/en/investors" target="_blank">Pernod IR</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">LVMH</span>
+                <span class="source-desc">Mo&euml;t Hennessy Wine &amp; Spirits division results. Cognac revenue &minus;17% Q1 2025, Hennessy U.S. volumes.</span>
+                <span class="source-link"><a href="https://www.lvmh.com/investors" target="_blank">LVMH Investors</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">R&eacute;my Cointreau</span>
+                <span class="source-desc">Annual results, guidance updates. R&eacute;my Martin depletions (&minus;21.2%), XO exposure, China tariff impact, stock decline.</span>
+                <span class="source-link"><a href="https://www.remy-cointreau.com/en/investors/" target="_blank">R&eacute;my Cointreau IR</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Campari Group</span>
+                <span class="source-desc">Annual Report 2024. Courvoisier acquisition ($1.2B), Cinzano/Averna/Zedda Piras divestitures (&euro;200M combined), CVH Spirits Scotch stake.</span>
+                <span class="source-link"><a href="https://www.camparigroup.com/en/investors" target="_blank">Campari IR</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Suntory Holdings</span>
+                <span class="source-desc">Beam Suntory/Suntory Global Spirits results. Jim Beam production halt, Japanese whisky capacity investment (&yen;10B).</span>
+                <span class="source-link"><a href="https://www.suntory.com/softdrink/ir/" target="_blank">Suntory IR</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">MGP Ingredients</span>
+                <span class="source-desc">NASDAQ: MGPI. Earnings reports, 68% gross profit decline in 2024, 2026 production cut guidance. Bulk whiskey market bellwether.</span>
+                <span class="source-link"><a href="https://ir.mgpingredients.com/" target="_blank">MGP IR</a></span>
             </div>
         </div>
 
         <div class="source-category">
-            <h4>Company Filings &amp; Reports</h4>
-            <div class="sources-grid">
-                <span>Diageo PLC &mdash; Annual Report &amp; Half-Year Results 2024, 2025</span>
-                <span>Pernod Ricard &mdash; Annual Results &amp; Strategic Update 2024</span>
-                <span>Brown-Forman Corporation &mdash; 10-K &amp; Earnings Reports</span>
-                <span>LVMH Mo&euml;t Hennessy &mdash; Wine &amp; Spirits Division Results</span>
-                <span>R&eacute;my Cointreau &mdash; Annual Results &amp; Guidance Updates</span>
-                <span>Campari Group &mdash; Annual Report 2024</span>
-                <span>Beam Suntory &mdash; Parent Company (Suntory Holdings) Results</span>
+            <h4>Bankruptcy &amp; Court Filings</h4>
+
+            <div class="source-entry">
+                <span class="source-name">Stoli Group / Kentucky Owl</span>
+                <span class="source-desc">Chapter 11 filing (Nov 2024), Chapter 7 conversion (Jan 2026), trustee appointment (Feb 2026). U.S. Bankruptcy Court, N.D. Texas.</span>
+                <span class="source-link"><a href="https://www.thespiritsbusiness.com/2026/01/stoli-groups-us-arm-shifts-to-liquidation/" target="_blank">Liquidation Report</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Devils River, Boston Harbor, Montana Distillery, JJ Pfister, Black Button</span>
+                <span class="source-desc">Individual Chapter 11 filings 2025. Various U.S. Bankruptcy Courts.</span>
+                <span class="source-link"><a href="https://www.thespiritsbusiness.com/2025/05/devils-river-distillery-files-for-bankruptcy/" target="_blank">Devils River</a> | <a href="https://delishably.com/news/boston-harbor-distillery-chapter-11-bankruptcy/" target="_blank">Boston Harbor</a></span>
+            </div>
+        </div>
+
+        <div class="source-category">
+            <h4>Industry Reporting &amp; Analysis</h4>
+
+            <div class="source-entry">
+                <span class="source-name">The Spirits Business</span>
+                <span class="source-desc">World Spirits Report 2025 (all categories), tariff coverage, M&amp;A analysis, distillery closures, category deep dives.</span>
+                <span class="source-link"><a href="https://www.thespiritsbusiness.com/" target="_blank">thespiritsbusiness.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Shanken News Daily</span>
+                <span class="source-desc">Don Julio market data, brand-level performance analysis, Impact Databank rankings.</span>
+                <span class="source-link"><a href="https://www.shankennewsdaily.com/" target="_blank">shankennewsdaily.com</a> <span class="source-sub">SUBSCRIPTION</span></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">The Drinks Business</span>
+                <span class="source-desc">UK/EU market coverage, Scotch distillery closures, tariff analysis, M&amp;A reporting.</span>
+                <span class="source-link"><a href="https://www.thedrinksbusiness.com/" target="_blank">thedrinksbusiness.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">VinePair</span>
+                <span class="source-desc">Irish whiskey market analysis, bourbon glut coverage, category trend reporting.</span>
+                <span class="source-link"><a href="https://vinepair.com/" target="_blank">vinepair.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Whisky Advocate</span>
+                <span class="source-desc">American whiskey state of the industry analysis, Black Button closure reporting, industry challenges overview.</span>
+                <span class="source-link"><a href="https://whiskyadvocate.com/" target="_blank">whiskyadvocate.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Park Street Imports</span>
+                <span class="source-desc">Beverage alcohol M&amp;A tracking 2024 and 2025 (55 and 51 deals respectively), tariff update tracker, industry reviews.</span>
+                <span class="source-link"><a href="https://www.parkstreet.com/2025-spirits-industry-review-top-ma-stories-trends/" target="_blank">2025 Review</a> | <a href="https://www.parkstreet.com/tracking-the-latest-updates-on-beverage-alcohol-tariffs/" target="_blank">Tariff Tracker</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Just Drinks</span>
+                <span class="source-desc">M&amp;A analysis, Diageo divestiture tracking, Campari portfolio strategy coverage.</span>
+                <span class="source-link"><a href="https://www.just-drinks.com/" target="_blank">just-drinks.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Drinks International</span>
+                <span class="source-desc">Pernod Ricard restructuring, global spirits market trends, category analysis.</span>
+                <span class="source-link"><a href="https://drinksint.com/" target="_blank">drinksint.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Global Drinks Intel</span>
+                <span class="source-desc">China Scotch export data, Campari brand divestitures, international spirits trade analysis.</span>
+                <span class="source-link"><a href="https://drinks-intel.com/" target="_blank">drinks-intel.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Overproof</span>
+                <span class="source-desc">DISCUS 2025 Economic Briefing analysis, de-premiumization trend data.</span>
+                <span class="source-link"><a href="https://overproof.com/2025/02/12/discus-2025-economic-briefing-spirits-industry/" target="_blank">DISCUS Analysis</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">The Rum Lab</span>
+                <span class="source-desc">U.S. spirits market de-premiumization data, rum industry 2024 recap, control-state trend analysis.</span>
+                <span class="source-link"><a href="https://therumlab.com/" target="_blank">therumlab.com</a></span>
+            </div>
+        </div>
+
+        <div class="source-category">
+            <h4>Financial &amp; Business Press</h4>
+
+            <div class="source-entry">
+                <span class="source-name">CNBC</span>
+                <span class="source-desc">Tequila tariff vulnerability analysis, RTD category performance, 2025 top-selling spirits.</span>
+                <span class="source-link"><a href="https://www.cnbc.com/2025/02/11/tequila-mezcal-sales-are-growing-but-mexico-tariffs-may-hit-industry.html" target="_blank">Tequila Tariff</a> | <a href="https://www.cnbc.com/2026/02/05/tequila-canned-cocktails-top-selling-liquors-2025.html" target="_blank">2025 Top Sellers</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Reuters / Bloomberg</span>
+                <span class="source-desc">French cognac tariff impact, LVMH results, Diageo restructuring, global trade policy analysis.</span>
+                <span class="source-link"><a href="https://www.reuters.com/" target="_blank">reuters.com</a> | <a href="https://www.bloomberg.com/" target="_blank">bloomberg.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Robb Report</span>
+                <span class="source-desc">Brown-Forman workforce cuts, ultra-premium spirits sales decline, whiskey production data.</span>
+                <span class="source-link"><a href="https://robbreport.com/food-drink/spirits/ultra-premium-spirits-sales-2024-decline-1236206203/" target="_blank">Ultra-Premium Decline</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Food Dive</span>
+                <span class="source-desc">Brown-Forman Canada sales plunge (&minus;62%), earnings analysis.</span>
+                <span class="source-link"><a href="https://www.fooddive.com/news/brown-forman-canada-sales/807565/" target="_blank">Canada Sales</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">AMA New York / Gravity Research</span>
+                <span class="source-desc">Anti-American consumer sentiment study: 62% of global marketers reporting impact on overseas sales.</span>
+                <span class="source-link"><a href="https://www.prnewswire.com/news-releases/anti-americanism-abroad-is-new-normal-for-top-us-brands-ama-new-york-study-finds-302658819.html" target="_blank">AMA Study</a></span>
+            </div>
+        </div>
+
+        <div class="source-category">
+            <h4>Market Research &amp; Forecasting</h4>
+
+            <div class="source-entry">
+                <span class="source-name">Euromonitor International</span>
+                <span class="source-desc">Tequila volume/value projections (&minus;0.8% volume, +6.2% value 2025). <span class="source-sub">SUBSCRIPTION</span></span>
+                <span class="source-link"><a href="https://www.euromonitor.com/" target="_blank">euromonitor.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Straits Research</span>
+                <span class="source-desc">Global Irish whiskey market valuation ($7.61B, 9.4% projected CAGR through 2033).</span>
+                <span class="source-link"><a href="https://straitsresearch.com/" target="_blank">straitsresearch.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Precedence Research</span>
+                <span class="source-desc">Global mezcal market ($1.28B 2025, projected $2.67B by 2034 at 8.52% CAGR).</span>
+                <span class="source-link"><a href="https://www.precedenceresearch.com/" target="_blank">precedenceresearch.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Grand View Research</span>
+                <span class="source-desc">Global rum market ($18.47B 2024, 4.3% CAGR through 2030).</span>
+                <span class="source-link"><a href="https://www.grandviewresearch.com/" target="_blank">grandviewresearch.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Transparency Market Research</span>
+                <span class="source-desc">Non-alcoholic spirits market projections ($531.9M 2023, projected $1.2B by 2034 at 7.4% CAGR).</span>
+                <span class="source-link"><a href="https://www.globenewswire.com/news-release/2025/03/20/3046547/32656/en/" target="_blank">TMR Report</a></span>
+            </div>
+        </div>
+
+        <div class="source-category">
+            <h4>Irish Whiskey Specific</h4>
+
+            <div class="source-entry">
+                <span class="source-name">Irish Whiskey Association / IWM</span>
+                <span class="source-desc">Export data (&euro;1.03B 2024), Global Trade Report 2025, distillery count data.</span>
+                <span class="source-link"><a href="https://www.irishwhiskeymagazine.com/news/irish-whiskey-global-trade-report-2025/" target="_blank">Global Trade Report</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">IMAP</span>
+                <span class="source-desc">Irish whiskey growth and opportunities analysis for investors.</span>
+                <span class="source-link"><a href="https://www.imap.com/en/insights/2025/Irish-Whiskey-and-the-Global-Market-Growth-and-Opportunities~cv" target="_blank">IMAP Analysis</a></span>
+            </div>
+        </div>
+
+        <div class="source-category">
+            <h4>Additional Sources Cited</h4>
+
+            <div class="source-entry">
+                <span class="source-name">TheStreet</span>
+                <span class="source-desc">U.S. distillery closure data (3,069 to 2,282 decline).</span>
+                <span class="source-link"><a href="https://www.thestreet.com/retail/tariffs-and-rising-costs-drive-record-closures-in-us-distilleries" target="_blank">Distillery Closures</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">NPR</span>
+                <span class="source-desc">Stolichnaya-to-Stoli rebrand coverage.</span>
+                <span class="source-link"><a href="https://www.npr.org/2022/03/07/1085053999/stolichnaya-vodka-stoli-ukraine-russia" target="_blank">Stoli Rebrand</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">CP24 / Canadian Media</span>
+                <span class="source-desc">Ontario LCBO removal of U.S. spirits, provincial boycott coverage.</span>
+                <span class="source-link"><a href="https://www.cp24.com/local/toronto/2025/03/04/ontario-removing-us-alcohol-from-lcbo-as-first-round-of-retaliation-against-trumps-tariffs/" target="_blank">LCBO Removal</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">Southern Ag Today</span>
+                <span class="source-desc">U.S.-Canada spirits trade war economic analysis.</span>
+                <span class="source-link"><a href="https://southernagtoday.org/2025/12/18/trade-war-fallout-the-collapse-of-u-s-spirit-exports-to-canada-in-2025/" target="_blank">Trade Collapse</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">FEVS</span>
+                <span class="source-desc">French wine and spirits exporters group. Projected 20% U.S. sales decline post-tariff.</span>
+                <span class="source-link"><a href="https://www.fevs.com/" target="_blank">fevs.com</a></span>
+            </div>
+
+            <div class="source-entry">
+                <span class="source-name">WSWA</span>
+                <span class="source-desc">Wine &amp; Spirits Wholesalers of America. Tariff impact estimates ($2.5B economic output at risk), USMCA tequila protection analysis.</span>
+                <span class="source-link"><a href="https://www.wswa.org/news/potential-tariffs-mexican-single-origin-wine-and-spirits-including-tequila-place-22-us-wine" target="_blank">Tariff Impact</a></span>
             </div>
         </div>
     </div>
@@ -1668,26 +1941,20 @@
 </div>
 
 <footer>
-    Analysis by Zillah Bahar | Data sourced from DISCUS, SWA, IWSR, NielsenIQ, Impact Databank, NABCA, ACSA, company filings, and trade databases | March 2026
+    Analysis by Zillah Bahar | Data sourced from DISCUS, SWA, BNIC, IWSR, NielsenIQ, Impact Databank, NABCA, ACSA, WSWA SipSource, company filings, trade databases, and court records | March 2026
 </footer>
 
 <script>
-// Chart 1: U.S. Category Performance
-const catCtx = document.getElementById('categoryChart').getContext('2d');
-const categories = [
-    'RTD/Spirits-Based', 'Japanese Whisky', 'Mezcal', 'Irish Whiskey', 'Tequila',
-    'Rum', 'Canadian Whisky', 'Scotch', 'American Whiskey', 'Vodka', 'Gin', 'Cognac/Brandy'
-];
-const catValues = [15, 10, 8, 5, 1.2, 0, 0, -2, -1.5, -2.5, -3, -8];
-const catColors = catValues.map(v => v > 2 ? '#16a34a' : v > 0 ? '#d97706' : v === 0 ? '#6b7280' : '#dc2626');
-
-new Chart(catCtx, {
+// Chart 1: Revenue by Category
+const revCtx = document.getElementById('revenueChart').getContext('2d');
+new Chart(revCtx, {
     type: 'bar',
     data: {
-        labels: categories,
+        labels: ['Vodka', 'Tequila/Mezcal', 'American Whiskey', 'RTD Spirits', 'Cognac/Brandy', 'Canadian Whisky', 'Scotch', 'Irish Whiskey', 'Rum', 'Gin'],
         datasets: [{
-            data: catValues,
-            backgroundColor: catColors,
+            label: '2024 Revenue ($B)',
+            data: [7.2, 6.7, 5.2, 3.8, 3.5, 2.3, 2.0, 1.5, 1.5, 0.8],
+            backgroundColor: ['#6b7280', '#16a34a', '#dc2626', '#16a34a', '#dc2626', '#dc2626', '#dc2626', '#d97706', '#d97706', '#dc2626'],
             borderRadius: 6,
             borderSkipped: false,
         }]
@@ -1700,17 +1967,14 @@ new Chart(catCtx, {
             legend: { display: false },
             tooltip: {
                 callbacks: {
-                    label: ctx => (ctx.raw > 0 ? '+' : '') + ctx.raw + '% YoY volume change'
+                    label: ctx => '$' + ctx.raw + 'B'
                 }
             }
         },
         scales: {
             x: {
                 grid: { color: '#e2e5ea' },
-                ticks: {
-                    callback: v => (v > 0 ? '+' : '') + v + '%',
-                    font: { size: 12 }
-                }
+                ticks: { callback: v => '$' + v + 'B', font: { size: 12 } }
             },
             y: {
                 grid: { display: false },
@@ -1720,69 +1984,60 @@ new Chart(catCtx, {
     }
 });
 
-// Chart 2: American Whiskey Export Trajectory
+// Chart 2: Export Collapse
 const expCtx = document.getElementById('exportChart').getContext('2d');
 new Chart(expCtx, {
-    type: 'line',
+    type: 'bar',
     data: {
-        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025 (est.)'],
-        datasets: [
-            {
-                label: 'Actual Export Value Index',
-                data: [95, 100, 78, 65, 72, 88, 82, 80, 65],
-                borderColor: '#dc2626',
-                backgroundColor: 'rgba(220, 38, 38, 0.1)',
-                fill: true,
-                tension: 0.3,
-                pointRadius: 5,
-                pointBackgroundColor: '#dc2626'
+        labels: ['Canada', 'UK', 'Japan', 'Cordials/Liqueurs', 'Vodka', 'American Whiskey', 'Brandy', 'EU', 'Total Spirits', 'Rum'],
+        datasets: [{
+            label: 'Q2 2025 vs Q2 2024',
+            data: [-85, -25, -23, -15, -14, -13, -12, -12, -9, -6],
+            backgroundColor: function(ctx) {
+                const v = ctx.raw;
+                return v <= -50 ? '#991b1b' : v <= -20 ? '#dc2626' : v <= -10 ? '#ef4444' : '#f87171';
             },
-            {
-                label: 'Pre-Tariff Growth Trajectory',
-                data: [95, 100, 108, 116, 125, 135, 146, 158, 170],
-                borderColor: '#6b7280',
-                borderDash: [8, 4],
-                fill: false,
-                tension: 0.3,
-                pointRadius: 0
-            }
-        ]
+            borderRadius: 6,
+            borderSkipped: false,
+        }]
     },
     options: {
+        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            legend: {
-                labels: { font: { size: 12 }, usePointStyle: true }
-            },
+            legend: { display: false },
             tooltip: {
                 callbacks: {
-                    label: ctx => ctx.dataset.label + ': ' + ctx.raw
+                    label: ctx => ctx.raw + '% YoY'
                 }
             }
         },
         scales: {
-            y: {
-                title: { display: true, text: 'Index (2018 = 100)', font: { size: 12 } },
-                grid: { color: '#e2e5ea' }
-            },
             x: {
-                grid: { display: false }
+                grid: { color: '#e2e5ea' },
+                ticks: { callback: v => v + '%', font: { size: 12 } },
+                max: 0,
+                min: -90
+            },
+            y: {
+                grid: { display: false },
+                ticks: { font: { size: 12, weight: 600 } }
             }
         }
     }
 });
 
-// Chart 3: Opportunity Heat Map (Radar)
-const heatCtx = document.getElementById('heatmapChart').getContext('2d');
-new Chart(heatCtx, {
+// Chart 3: Radar
+const radCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radCtx, {
     type: 'radar',
     data: {
         labels: ['Growth Trajectory', 'Tariff Insulation', 'Asset Availability', 'Pricing Power', 'Consumer Momentum', 'Capital Efficiency'],
         datasets: [
             {
                 label: 'Irish Whiskey',
-                data: [9, 10, 7, 7, 9, 7],
+                data: [8, 10, 7, 7, 8, 7],
                 borderColor: '#16a34a',
                 backgroundColor: 'rgba(22, 163, 74, 0.1)',
                 pointBackgroundColor: '#16a34a'
@@ -1796,14 +2051,14 @@ new Chart(heatCtx, {
             },
             {
                 label: 'Japanese Whisky',
-                data: [8, 7, 3, 10, 8, 4],
+                data: [6, 7, 3, 10, 7, 4],
                 borderColor: '#4f46e5',
                 backgroundColor: 'rgba(79, 70, 229, 0.1)',
                 pointBackgroundColor: '#4f46e5'
             },
             {
                 label: 'American Whiskey',
-                data: [3, 2, 8, 6, 4, 5],
+                data: [3, 4, 9, 6, 4, 5],
                 borderColor: '#dc2626',
                 backgroundColor: 'rgba(220, 38, 38, 0.1)',
                 pointBackgroundColor: '#dc2626'
@@ -1821,9 +2076,7 @@ new Chart(heatCtx, {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-            legend: {
-                labels: { font: { size: 12 }, usePointStyle: true }
-            }
+            legend: { labels: { font: { size: 12 }, usePointStyle: true } }
         },
         scales: {
             r: {
